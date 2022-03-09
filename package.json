@@ -11,6 +11,7 @@
     "@chenfengyuan/vue-countdown": "^1.1.5",
     "core-js": "^3.8.3",
     "element-ui": "^2.15.6",
+    "moment": "^2.29.1",
     "vue": "^2.6.14",
     "vue-ls": "^4.1.0",
     "vue-resource": "^1.5.3"
@@ -46,5 +47,8 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "gitHooks":{
+    "pre-commit": "scripts/pre-commit"
+  }
 }
