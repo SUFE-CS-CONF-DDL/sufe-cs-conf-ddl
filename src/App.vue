@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/logo1.png">
+    欢迎:{{msg}}
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-
+// import HelloWorld from './components/HelloWorld.vue';
+import Home from './components/Home.vue'
 export default {
   name: 'App',
+  data() {
+    return {
+      msg: 'wangziyuan',
+    };
+  },
   components: {
     HelloWorld,
   },
