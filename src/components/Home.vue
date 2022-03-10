@@ -1,9 +1,12 @@
 <template>
   <section>
     <Header></Header>
-    <el-checkbox style="padding-top: 10px;width: 33%" :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange"><span style="color: #666666">全选</span></el-checkbox>
+    <el-checkbox style="padding-top: 10px;width: 33%" :indeterminate="isIndeterminate"
+    v-model="checkAll" @change="handleCheckAllChange">
+      <span style="color: #666666">全选</span></el-checkbox>
     <el-checkbox-group v-model="checkList" @change="handleCheckedChange">
-      <el-checkbox class="boxes" size="medium" v-for="item in subList" :label="item.sub" :key="item.sub"><span style="color: #666666">{{formatSubName(item)}}</span></el-checkbox>
+      <el-checkbox class="boxes" size="medium" v-for="item in subList" :label="item.sub" :key="item.sub">
+        <span style="color: #666666">{{formatSubName(item)}}</span></el-checkbox>
     </el-checkbox-group>
     <el-row class="timezone">
       <div style="float: left">
@@ -18,7 +21,9 @@
       </div>
       <div style="float: right">
         <el-checkbox-group v-model="rankList" size="mini" @change="handleRankChange" class="rankbox">
-          <el-checkbox-button v-for="rank in rankoptions" :label="rank" :key="rank">CCF {{rank}}</el-checkbox-button>
+          <el-checkbox-button v-for="rank in rankoptions" :label="rank" :key="rank">
+            CCF {{rank}}
+          </el-checkbox-button>
         </el-checkbox-group>
       </div>
     </el-row>
@@ -32,12 +37,15 @@
           <div :class="{ 'conf-fin': scope.row.status === 'FIN' }">
             <el-row class="conf-title">
               <a :href="generateDBLP(scope.row.dblp)">{{scope.row.title}}</a> {{scope.row.year}}
-              <i v-if="scope.row.isLike===true" class="el-icon-star-on" style="color: #FBCA04" @click="handleClickIcon(scope.row, true)"/>
-              <i v-else class="el-icon-star-off" @click="handleClickIcon(scope.row, false)"/>
+              <!-- left a bug to do!!! error    Visible, non-interactive elements with click handlers must have at least one keyboard listener -->
+              <!-- <i v-if="scope.row.isLike===true" class="el-icon-star-on" style="color: #FBCA04" @click="handleClickIcon(scope.row, true)"/><i v-else class="el-icon-star-off" @click="handleClickIcon(scope.row, false)"/> -->
             </el-row>
             <el-row>{{scope.row.date+' '+scope.row.place}}</el-row>
             <el-row class="conf-des">{{scope.row.description}}</el-row>
-            <el-row><el-tag size="mini" type="" effect="plain">CCF {{scope.row.rank}}</el-tag> <span style="color: #409eff" v-show="scope.row.comment"><b>NOTE:</b> {{scope.row.comment}}</span></el-row>
+            <el-row>
+              <el-tag size="mini" type="" effect="plain">CCF {{scope.row.rank}}</el-tag>
+              <span style="color: #409eff" v-show="scope.row.comment"><b>NOTE:</b> {{scope.row.comment}}</span>
+            </el-row>
             <el-row style="padding-top: 5px"><span class="conf-sub">{{scope.row.subname}}</span></el-row>
             </div>
         </template>
@@ -54,7 +62,8 @@
                   placement="right"
                   trigger="click">
                 <el-row>
-                  <img src="//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png#" srcset="//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png 2x ,//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png# 1x" alt="" aria-hidden="true" style="width:20px;height:20px;vertical-align: middle">
+                  <img src="//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png#" srcset="//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png 2x ,//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png# 1x"
+                  alt="" aria-hidden="true" style="width:20px;height:20px;vertical-align: middle">
                   <span  style="padding-left: 5px">
                     <a :href="formatGoogleCalendar(scope.row)"
                        target="_blank" rel="nofollow">Google Calendar</a>
@@ -80,7 +89,7 @@
     </el-table>
     <el-row style="padding-top: 8px">
       <div style="float: left; color: #666666;font-size: 12px;">
-        <div>ccf-deadlines is created and maintained by <a href="https://github.com/SUFEHeisenberg">@SUFEHeisenberg</a></a>.</div>
+        <div>ccf-deadlines is created and maintained by <a href="https://github.com/SUFEHeisenberg">@SUFEHeisenberg</a>.</div>
         <div style="padding-top: 3px">If you find it useful, STAR the project.</div>
       </div>
       <div style="float: right">
@@ -100,16 +109,18 @@
 </template>
 
 <script>
-import Header from './Header'
-import TimeLine from "./TimeLine";
-const yaml = require('js-yaml')
-const moment = require('moment-timezone')
-const tz = moment.tz.guess()
+import Header from './Header.vue';
+import TimeLine from './TimeLine.vue';
+
+const yaml = require('js-yaml');
+const moment = require('moment-timezone');
+
+const tz = moment.tz.guess();
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     Header,
-    TimeLine
+    TimeLine,
   },
   data() {
     return {
@@ -131,294 +142,303 @@ export default {
       rankList: [],
       cachedLikes: [],
       cachedRanks: [],
-      input: ''
-    }
+      input: '',
+    };
   },
   methods: {
-    loadFile () {
-      this.timeZone = tz
-      this.$http.get(this.publicPath + 'conference/types.yml').then(response => {
-        const doc = yaml.load(response.body)
-        this.subList = doc
-        for (let i = 0; i < this.subList.length; i++) {
-          this.checkList.push(this.subList[i].sub)
-          this.typesList.push(this.subList[i].sub)
-          this.typeMap.set(this.subList[i].sub, this.subList[i].name)
+    loadFile() {
+      this.timeZone = tz;
+      this.$http.get(`${this.publicPath}conference/types.yml`).then((response) => {
+        const doc = yaml.load(response.body);
+        this.subList = doc;
+        for (let i = 0; i < this.subList.length; i += 1) {
+          this.checkList.push(this.subList[i].sub);
+          this.typesList.push(this.subList[i].sub);
+          this.typeMap.set(this.subList[i].sub, this.subList[i].name);
         }
-        this.loadCachedTypes()
-        this.getAllConf()
+        this.loadCachedTypes();
+        this.getAllConf();
       }, () => {
-        alert('sorry your network is not stable!')
-      })
+        alert('sorry your network is not stable!');
+      });
     },
     getAllConf() {
       // get all conf
-      this.$http.get(this.publicPath + 'conference/allconf.yml').then(response => {
-        const allconf = yaml.load(response.body)
+      this.$http.get(`${this.publicPath}conference/allconf.yml`).then((response) => {
+        const allconf = yaml.load(response.body);
         // preprocess
-        let doc = []
-        let tmpTime = moment.tz(new Date(), tz)
-        for (let i = 0; i < allconf.length; i++) {
-          let curConf = allconf[i]
-          for(let j = 0; j < curConf.confs.length; j++){
-            let curItem = curConf.confs[j]
-            curItem.title = curConf.title
-            curItem.description = curConf.description
-            curItem.sub = curConf.sub
-            curItem.rank = curConf.rank
-            curItem.dblp = curConf.dblp
-            let len = curItem.timeline.length
-            curItem.deadline = curItem.timeline[len-1].deadline
-            curItem.abstract_deadline = curItem.timeline[len-1].abstract_deadline
-            curItem.comment = curItem.timeline[len-1].comment
-            curItem.ddls = []
+        const doc = [];
+        const tmpTime = moment.tz(new Date(), tz);
+        for (let i = 0; i < allconf.length; i += 1) {
+          const curConf = allconf[i];
+          for (let j = 0; j < curConf.confs.length; j += 1) {
+            const curItem = curConf.confs[j];
+            curItem.title = curConf.title;
+            curItem.description = curConf.description;
+            curItem.sub = curConf.sub;
+            curItem.rank = curConf.rank;
+            curItem.dblp = curConf.dblp;
+            const len = curItem.timeline.length;
+            curItem.deadline = curItem.timeline[len - 1].deadline;
+            curItem.abstract_deadline = curItem.timeline[len - 1].abstract_deadline;
+            curItem.comment = curItem.timeline[len - 1].comment;
+            curItem.ddls = [];
             let flag = false;
-            for(let k = 0; k < len; k++) {
-              let ddlTime = moment(curItem.timeline[k].deadline + this.utcMap.get(curItem.timezone))
-              let diffTime = ddlTime.diff(tmpTime)
-              curItem.ddls.push(curItem.timeline[k].deadline + this.utcMap.get(curItem.timezone))
+            for (let k = 0; k < len; k += 1) {
+              const ddlTime = moment(curItem.timeline[k].deadline + this.utcMap.get(curItem.timezone));
+              const diffTime = ddlTime.diff(tmpTime);
+              curItem.ddls.push(curItem.timeline[k].deadline + this.utcMap.get(curItem.timezone));
               if (!flag && diffTime >= 0) {
-                curItem.deadline = curItem.timeline[k].deadline
-                curItem.abstract_deadline = curItem.timeline[k].abstract_deadline
-                curItem.comment = curItem.timeline[k].comment
+                curItem.deadline = curItem.timeline[k].deadline;
+                curItem.abstract_deadline = curItem.timeline[k].abstract_deadline;
+                curItem.comment = curItem.timeline[k].comment;
                 flag = true;
               }
             }
-            doc.push(curItem)
+            doc.push(curItem);
           }
         }
 
-        let curTime = moment.tz(new Date(), tz)
-        for (let i = 0; i < doc.length; i++) {
-          let curDoc = doc[i]
-          curDoc.subname = this.typeMap.get(curDoc.sub)
+        const curTime = moment.tz(new Date(), tz);
+        for (let i = 0; i < doc.length; i += 1) {
+          const curDoc = doc[i];
+          curDoc.subname = this.typeMap.get(curDoc.sub);
           if (curDoc.deadline === 'TBD') {
-            curDoc.remain = 0
-            curDoc.status = 'TBD'
+            curDoc.remain = 0;
+            curDoc.status = 'TBD';
           } else {
             if (curDoc.timezone === 'AoE') {
-              curDoc.timezone = 'UTC-12'
+              curDoc.timezone = 'UTC-12';
             } else if (curDoc.timezone === 'UTC') {
-              curDoc.timezone = 'UTC+0'
+              curDoc.timezone = 'UTC+0';
             }
 
-            let ddlTime = moment(curDoc.deadline + this.utcMap.get(curDoc.timezone))
-            curDoc.localDDL = ddlTime.tz(this.timeZone).format('ddd MMM Do YYYY HH:mm:ss z')
-            curDoc.originDDL = curDoc.deadline + ' ' + curDoc.timezone
-            if(curDoc.abstract_deadline) {
-              let absTime = moment(curDoc.abstract_deadline + this.utcMap.get(curDoc.timezone))
-              if(!curDoc.comment) {
-                curDoc.comment = 'abstract deadline on ' + absTime.tz(this.timeZone).format('MMM D, YYYY')+'.'
+            const ddlTime = moment(curDoc.deadline + this.utcMap.get(curDoc.timezone));
+            curDoc.localDDL = ddlTime.tz(this.timeZone).format('ddd MMM Do YYYY HH:mm:ss z');
+            curDoc.originDDL = `${curDoc.deadline} ${curDoc.timezone}`;
+            if (curDoc.abstract_deadline) {
+              const absTime = moment(curDoc.abstract_deadline + this.utcMap.get(curDoc.timezone));
+              if (!curDoc.comment) {
+                curDoc.comment = `abstract deadline on ${absTime.tz(this.timeZone).format('MMM D, YYYY')}.`;
               }
             }
             // alert(ddlTime.tz(this.timeZone).format('ddd MMM Do YYYY HH:mm:ss z'))
-            let diffTime = ddlTime.diff(curTime)
+            const diffTime = ddlTime.diff(curTime);
             if (diffTime <= 0) {
-              curDoc.remain = 0
-              curDoc.status = 'FIN'
+              curDoc.remain = 0;
+              curDoc.status = 'FIN';
             } else {
-              curDoc.remain = diffTime
-              curDoc.status = 'RUN'
+              curDoc.remain = diffTime;
+              curDoc.status = 'RUN';
             }
             // check cachedLikes
-            if(this.cachedLikes&&this.cachedLikes.indexOf(curDoc.title + curDoc.id) >= 0) {
-              curDoc.isLike = true
-            }else {
-              curDoc.isLike = false
+            if (this.cachedLikes && this.cachedLikes.indexOf(curDoc.title + curDoc.id) >= 0) {
+              curDoc.isLike = true;
+            } else {
+              curDoc.isLike = false;
             }
           }
-          this.allconfList.push(curDoc)
+          this.allconfList.push(curDoc);
         }
-        this.showConf(this.typesList, this.rankList, this.input, 1)
+        this.showConf(this.typesList, this.rankList, this.input, 1);
       }, () => {
-        alert('sorry your network is not stable!')
-      })
+        alert('sorry your network is not stable!');
+      });
     },
-    showConf (types, rank, input, page) {
-      let filterList = this.allconfList
+    showConf(types, rank, input, page) {
+      let filterList = this.allconfList;
 
-      if (types != null && types.length != 0){
-        filterList = filterList.filter(function (item){return types.indexOf(item.sub.toUpperCase()) >= 0})
+      if (types != null && types.length != 0) {
+        filterList = filterList.filter((item) => types.indexOf(item.sub.toUpperCase()) >= 0);
       }
 
-      if (rank != null && rank.length > 0){
-        filterList = filterList.filter(function (item){return rank.indexOf(item.rank) >= 0})
+      if (rank != null && rank.length > 0) {
+        filterList = filterList.filter((item) => rank.indexOf(item.rank) >= 0);
       }
 
-      if (input != null && input.length > 0){
-        filterList = filterList.filter(function (item){return item.id.toLowerCase().indexOf(input.toLowerCase()) >= 0})
+      if (input != null && input.length > 0) {
+        filterList = filterList.filter((item) => item.id.toLowerCase().indexOf(input.toLowerCase()) >= 0);
       }
 
-      let runList = filterList.filter(function (item){ return item.status === 'RUN'})
-      let tbdList = filterList.filter(function (item){ return item.status === 'TBD'})
-      let finList = filterList.filter(function (item){ return item.status === 'FIN'})
+      const runList = filterList.filter((item) => item.status === 'RUN');
+      const tbdList = filterList.filter((item) => item.status === 'TBD');
+      const finList = filterList.filter((item) => item.status === 'FIN');
 
-      runList.sort((a, b) => (b.remain === a.remain ? 0 : a.remain < b.remain ? -1 : 1))
-      finList.sort((a, b) => (b.year === a.year ? 0 : a.year > b.year ? -1 : 1))
+      runList.sort((a, b) => (b.remain === a.remain ? 0 : a.remain < b.remain ? -1 : 1));
+      finList.sort((a, b) => (b.year === a.year ? 0 : a.year > b.year ? -1 : 1));
 
-      this.showList = []
-      let allList = []
-      let likesList = []
-      allList.push.apply(allList, runList)
-      allList.push.apply(allList, tbdList)
-      allList.push.apply(allList, finList)
+      this.showList = [];
+      const allList = [];
+      const likesList = [];
+      allList.push(runList);
+      allList.push(tbdList);
+      allList.push(finList);
+      // allList.push.apply(allList, runList);
+      // allList.push.apply(allList, tbdList);
+      // allList.push.apply(allList, finList);
 
-      for(let i=allList.length-1;i>=0;i--){
-        let curDoc = allList[i]
-        if(curDoc.isLike===true){
-          likesList.push(curDoc)
-          allList.splice(i,1)
+      for (let i = allList.length - 1; i >= 0; i -= 1) {
+        const curDoc = allList[i];
+        if (curDoc.isLike === true) {
+          likesList.push(curDoc);
+          allList.splice(i, 1);
         }
       }
-      likesList.reverse()
-      likesList.push.apply(likesList, allList)
-      this.showList = likesList
-      this.showNumber = this.showList.length
-      this.showList = this.showList.slice(this.pageSize*(page-1), this.pageSize*page)
-      this.page = page
+      likesList.reverse();
+      likesList.push(allList);
+      // likesList.push.apply(likesList, allList);
+      this.showList = likesList;
+      this.showNumber = this.showList.length;
+      this.showList = this.showList.slice(this.pageSize * (page - 1), this.pageSize * page);
+      this.page = page;
     },
-    transform (props) {
+    transform(props) {
       Object.entries(props).forEach(([key, value]) => {
         // Adds leading zero
-        const digits = value < 10 ? `0${value}` : value
+        const digits = value < 10 ? `0${value}` : value;
         // uses singular form when the value is less than 2
-        const word = value < 2 ? key.replace(/s$/, '') : key
+        const word = value < 2 ? key.replace(/s$/, '') : key;
         if (word[0] === 'd') {
-          props[key] = `${digits} ${word}`
+          props[key] = `${digits} ${word}`;
         } else {
-          props[key] = `${digits} ${word[0]}`
+          props[key] = `${digits} ${word[0]}`;
         }
-      })
-      return props
+      });
+      return props;
     },
-    loadUTCMap () {
-      for (let i = -12; i <= 12; i++) {
+    loadUTCMap() {
+      for (let i = -12; i <= 12; i += 1) {
         if (i >= 0) {
-          this.utcMap.set('UTC+' + i, '+' + (Array(2).join(0) + i).slice(-2) + '00')
+          this.utcMap.set(`UTC+${i}`, `+${(Array(2).join(0) + i).slice(-2)}00`);
         } else {
-          this.utcMap.set('UTC' + i, '-' + (Array(2).join(0) + i * -1).slice(-2) + '00')
+          this.utcMap.set(`UTC${i}`, `-${(Array(2).join(0) + i * -1).slice(-2)}00`);
         }
       }
-      this.utcMap.set('AoE', '-1200')
-      this.utcMap.set('UTC', '+0000')
+      this.utcMap.set('AoE', '-1200');
+      this.utcMap.set('UTC', '+0000');
     },
     handleCheckedChange(types) {
-      this.typesList = types
-      let checkedCount = types.length
-      this.checkAll = checkedCount === this.subList.length
-      this.isIndeterminate = checkedCount > 0 && checkedCount < this.subList.length
-      this.$ls.set('types', Array.from(this.typesList))
-      this.showConf(this.typesList, this.rankList, this.input, 1)
+      this.typesList = types;
+      const checkedCount = types.length;
+      this.checkAll = checkedCount === this.subList.length;
+      this.isIndeterminate = checkedCount > 0 && checkedCount < this.subList.length;
+      this.$ls.set('types', Array.from(this.typesList));
+      this.showConf(this.typesList, this.rankList, this.input, 1);
     },
-    handleInputChange(){
-      this.showConf(this.typesList, this.rankList, this.input,1)
+    handleInputChange() {
+      this.showConf(this.typesList, this.rankList, this.input, 1);
     },
     handleRankChange(rank) {
-      this.rankList = rank
-      this.$ls.set('ranks', Array.from(this.rankList))
-      this.showConf(this.typesList, this.rankList, this.input,1)
+      this.rankList = rank;
+      this.$ls.set('ranks', Array.from(this.rankList));
+      this.showConf(this.typesList, this.rankList, this.input, 1);
     },
     handleCurrentChange(page) {
-      this.showConf(this.typesList, this.rankList, this.input, page)
+      this.showConf(this.typesList, this.rankList, this.input, page);
     },
     handleCheckAllChange() {
-      this.typesList = (this.checkList.length === this.subList.length) ? [] : this.subList.map((obj) => {return obj.sub}).join(",").split(',');
-      this.checkList = this.typesList
-      this.isIndeterminate = false
-      this.$ls.set('types', Array.from(this.typesList))
-      this.showConf(this.typesList, this.rankList, this.input,1)
+      this.typesList = (this.checkList.length === this.subList.length) ? [] : this.subList.map((obj) => obj.sub).join(',').split(',');
+      this.checkList = this.typesList;
+      this.isIndeterminate = false;
+      this.$ls.set('types', Array.from(this.typesList));
+      this.showConf(this.typesList, this.rankList, this.input, 1);
     },
     handleClickIcon(record, judge) {
-      if(judge === true) {
-        record.isLike = false
-        let index = this.cachedLikes.indexOf(record.title + record.id)
-        if(index > -1) this.cachedLikes.splice(index,1)
-        this.$ls.set('likes', Array.from(new Set(this.cachedLikes)))
-      }else {
-        record.isLike = true
-        this.cachedLikes.push(record.title + record.id)
-        this.$ls.set('likes', Array.from(new Set(this.cachedLikes)))
+      if (judge === true) {
+        record.isLike = false;
+        const index = this.cachedLikes.indexOf(record.title + record.id);
+        if (index > -1) this.cachedLikes.splice(index, 1);
+        this.$ls.set('likes', Array.from(new Set(this.cachedLikes)));
+      } else {
+        record.isLike = true;
+        this.cachedLikes.push(record.title + record.id);
+        this.$ls.set('likes', Array.from(new Set(this.cachedLikes)));
       }
     },
-    generateDBLP(name){
-      return 'https://dblp.uni-trier.de/db/conf/' + name
+    generateDBLP(name) {
+      return `https://dblp.uni-trier.de/db/conf/${name}`;
     },
-    formatGoogleCalendar(row){
-      return "https://www.google.com/calendar/render?action=TEMPLATE" +
-          "&text="+row.title+"+"+row.year+
-          "&dates="+moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g,"")+"/"+ moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g,"") +
-          "&details=" + row.comment +
-          "&location=Online" +
-          "&ctz=" + this.timeZone +
-          "&sf=true&output=xml"
+    formatGoogleCalendar(row) {
+      return `${'https://www.google.com/calendar/render?action=TEMPLATE'
+          + '&text='}${row.title}+${row.year
+      }&dates=${moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g, '')}/${moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g, '')
+      }&details=${row.comment
+      }&location=Online`
+          + `&ctz=${this.timeZone
+          }&sf=true&output=xml`;
     },
     _isMobile() {
-      let flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+      const flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
       return flag;
     },
-    formatSubName(item){
-      if(this._isMobile()) {
-        return item.sub
-      }else {
-        return item.name
+    formatSubName(item) {
+      if (this._isMobile()) {
+        return item.sub;
       }
+      return item.name;
     },
     loadCachedTypes() {
-      let tmpList = this.$ls.get('types')
-      if(tmpList) {
-        this.typesList = tmpList
-        this.checkList = this.typesList
-        let checkedCount = this.checkList.length
-        this.checkAll = checkedCount === this.subList.length
-        this.isIndeterminate = checkedCount > 0 && checkedCount < this.subList.length
+      const tmpList = this.$ls.get('types');
+      if (tmpList) {
+        this.typesList = tmpList;
+        this.checkList = this.typesList;
+        const checkedCount = this.checkList.length;
+        this.checkAll = checkedCount === this.subList.length;
+        this.isIndeterminate = checkedCount > 0 && checkedCount < this.subList.length;
       }
     },
     loadCachedLikes() {
-      this.cachedLikes = this.$ls.get('likes')
-      if(!this.cachedLikes) this.cachedLikes = []
+      this.cachedLikes = this.$ls.get('likes');
+      if (!this.cachedLikes) this.cachedLikes = [];
     },
     loadCachedRanks() {
-      this.cachedRanks = this.$ls.get('ranks')
-      if(!this.cachedRanks) this.cachedRanks = []
-      this.rankList = this.cachedRanks
+      this.cachedRanks = this.$ls.get('ranks');
+      if (!this.cachedRanks) this.cachedRanks = [];
+      this.rankList = this.cachedRanks;
     },
   },
-  mounted () {
+  mounted() {
     // this.loadCachedTypes()
-    this.loadCachedRanks()
-    this.loadCachedLikes()
-    this.loadUTCMap()
-    this.loadFile()
-  }
-}
+    this.loadCachedRanks();
+    this.loadCachedLikes();
+    this.loadUTCMap();
+    this.loadFile();
+  },
+};
 </script>
 
 <style scoped>
-/*/deep/ .el-table tbody tr { pointer-events:; }*/
-/deep/ .el-input--mini .el-input__inner {
+/* /deep/ .el-table tbody tr { pointer-events:; } */
+/* /deep/ .el-input--mini .el-input__inner { */
+.el-input--mini .el-input__inner {
   height: 20px;
   line-height: 20px;
 }
 
-/deep/ .el-input--mini .el-input__icon {
+/* /deep/ .el-input--mini .el-input__icon { */
+.el-input--mini .el-input__icon {
   line-height: 20px;
 }
 
-/deep/ .el-checkbox__inner {
+/* /deep/ .el-checkbox__inner { */
+.el-checkbox__inner {
   height: 20px;
   width: 20px;
 }
 
-/deep/ .el-button {
+/* /deep/ .el-button { */
+.el-button {
   height: 20px;
   padding: 0px 5px;
 }
 
-/deep/ .el-checkbox-button--mini .el-checkbox-button__inner {
+/* /deep/ .el-checkbox-button--mini .el-checkbox-button__inner { */
+.el-checkbox-button--mini .el-checkbox-button__inner {
   padding: 3px 10px;
 }
 
-/deep/ .el-checkbox__inner::after {
+/* /deep/ .el-checkbox__inner::after { */
+.el-checkbox__inner::after {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   content: "";
@@ -439,7 +459,8 @@ export default {
   transform-origin: center;
 }
 
-/deep/ .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+/* /deep/ .el-checkbox__input.is-indeterminate .el-checkbox__inner::before { */
+.el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
   height: 6px;
   top: 6px;
 }

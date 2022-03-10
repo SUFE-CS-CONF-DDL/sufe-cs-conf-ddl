@@ -25,112 +25,116 @@
 </template>
 
 <script>
-const moment = require('moment-timezone')
-const tz = moment.tz.guess()
+const moment = require('moment-timezone');
+
+const tz = moment.tz.guess();
 export default {
-  name: "TimeLine",
+  name: 'TimeLine',
   props: ['ddls'],
   data() {
     return {
-      fullDate: null,//最初时间（最开始有数据的时候）
-      binlogDate: null,//binlog 结束时间
-      selTime: null,//选中时间
-      start_date: null,//开始时间戳
-      end_date: null,//结束时间戳
-      timeline: null,//选中时间戳
-      incre_dates: [],//备份点数组
-      allIncre: [],//备份点和binlog
-      dateTips: [],//0点，提示时间点数组
+      fullDate: null, // 最初时间（最开始有数据的时候）
+      binlogDate: null, // binlog 结束时间
+      selTime: null, // 选中时间
+      start_date: null, // 开始时间戳
+      end_date: null, // 结束时间戳
+      timeline: null, // 选中时间戳
+      incre_dates: [], // 备份点数组
+      allIncre: [], // 备份点和binlog
+      dateTips: [], // 0点，提示时间点数组
       deadlines: [],
       isSingle: false,
-      expireIndex: -1
+      expireIndex: -1,
     };
   },
-  created(){
+  created() {
 
   },
   mounted() {
-    this.$nextTick(()=>{
+    this.$nextTick(() => {
       this.getBackupTimeline();
-    })
+    });
   },
   methods: {
     _isMobile() {
-      let flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+      const flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
       return flag;
     },
-    //时间显示格式
-    formatter(value,day,index) {
-      if(day) {
-        if(this.ddls.length>1&&index>0){
-          let cur = this.dateTips[index]
-          let pre = this.dateTips[index-1]
-          if((cur-this.start_date)/(this.end_date-this.start_date)*100-
-              (pre-this.start_date)/(this.end_date-this.start_date)*100
-              <8) return ``;
+    // 时间显示格式
+    formatter(value, day, index) {
+      if (day) {
+        if (this.ddls.length > 1 && index > 0) {
+          const cur = this.dateTips[index];
+          const pre = this.dateTips[index - 1];
+          // if ((cur - this.start_date) / (this.end_date - this.start_date) * 100
+          //     - (pre - this.start_date) / (this.end_date - this.start_date) * 100
+          //     < 8) return '';
+          if (((cur - this.start_date) / (this.end_date - this.start_date)) * 100
+              - ((pre - this.start_date) / (this.end_date - this.start_date)) * 100
+              < 8) return '';
         }
-        return `${moment(value*1000).format('MM/DD')}`;
+        return `${moment(value * 1000).format('MM/DD')}`;
       }
-      return `${moment(value*1000).format('YYYY/MM/DD HH:mm:ss')}`;
+      return `${moment(value * 1000).format('YYYY/MM/DD HH:mm:ss')}`;
     },
-    //获取时间轴数据
-    getBackupTimeline(){
-      this.fullDate = null
-      this.binlogDate =  null
-      this.selTime = null
-      this.start_date = null
-      this.end_date = null
-      this.timeline = null
-      this.deadlines = []
-      this.incre_dates = []
-      this.allIncre = []
-      this.dateTips = []
-      this.isSingle = false
-      this.expireIndex = -1
+    // 获取时间轴数据
+    getBackupTimeline() {
+      this.fullDate = null;
+      this.binlogDate = null;
+      this.selTime = null;
+      this.start_date = null;
+      this.end_date = null;
+      this.timeline = null;
+      this.deadlines = [];
+      this.incre_dates = [];
+      this.allIncre = [];
+      this.dateTips = [];
+      this.isSingle = false;
+      this.expireIndex = -1;
 
-      let nowDate = moment.tz(new Date(), tz).valueOf()
+      const nowDate = moment.tz(new Date(), tz).valueOf();
 
-      let orilen = this.ddls.length
-      if(orilen===1){
-        this.deadlines.push(nowDate/1000)
-        this.isSingle = true
+      const orilen = this.ddls.length;
+      if (orilen === 1) {
+        this.deadlines.push(nowDate / 1000);
+        this.isSingle = true;
       }
-      for(let i=0;i<orilen;i++){
-        let tmp = moment(this.ddls[i]).valueOf()/1000
-        this.deadlines.push(tmp)
+      for (let i = 0; i < orilen; i += 1) {
+        const tmp = moment(this.ddls[i]).valueOf() / 1000;
+        this.deadlines.push(tmp);
       }
 
-      let len = this.deadlines.length
-      for(let i=0;i<len;i++) {
-        let tmp = this.deadlines[i]
-        if(nowDate>=tmp*1000){
-          this.expireIndex = i
-        }else {
-          break
+      const len = this.deadlines.length;
+      for (let i = 0; i < len; i += 1) {
+        const tmp = this.deadlines[i];
+        if (nowDate >= tmp * 1000) {
+          this.expireIndex = i;
+        } else {
+          break;
         }
       }
 
-      if(nowDate<this.deadlines[0]*1000){
-        this.start_date = moment(nowDate).subtract(7, 'd').startOf('day').format("X")*1;
-      }else{
-        this.start_date = moment(this.deadlines[0]*1000).subtract(7, 'd').startOf('day').format("X")*1;
+      if (nowDate < this.deadlines[0] * 1000) {
+        this.start_date = moment(nowDate).subtract(7, 'd').startOf('day').format('X') * 1;
+      } else {
+        this.start_date = moment(this.deadlines[0] * 1000).subtract(7, 'd').startOf('day').format('X') * 1;
       }
-      this.end_date = moment(this.deadlines[len-1]*1000).add(7,'d').endOf('day').format("X")*1;
+      this.end_date = moment(this.deadlines[len - 1] * 1000).add(7, 'd').endOf('day').format('X') * 1;
 
+      this.fullDate = nowDate / 1000;
+      this.binlogDate = this.deadlines[len - 1];
 
-      this.fullDate = nowDate/1000;
-      this.binlogDate = this.deadlines[len-1];
-
-      //设置binlog
-      let canLine = this.$refs.canLine;
-      let binlogStart=nowDate/1000;//binlog开始时间
-      let binlogNum = (this.binlogDate-binlogStart)/(this.end_date-this.start_date);//binlog占时间轴百分比
-      if(binlogNum>0){//如果选择的时间有binlog
-        canLine.style.width = binlogNum*100 + '%' ;
-        canLine.style.left = (binlogStart-this.start_date)/(this.end_date-this.start_date)*100 + '%';
-        canLine.style.maxWidth =100-parseFloat(canLine.style.left) + '%' ;
-      }else{
-        canLine.style.width = 0 + '%' ;
+      // 设置binlog
+      const { canLine } = this.$refs;
+      const binlogStart = nowDate / 1000;// binlog开始时间
+      const binlogNum = (this.binlogDate - binlogStart) / (this.end_date - this.start_date);// binlog占时间轴百分比
+      if (binlogNum > 0) { // 如果选择的时间有binlog
+        canLine.style.width = `${binlogNum * 100}%`;
+        // canLine.style.left = `${(binlogStart - this.start_date) / (this.end_date - this.start_date) * 100}%`;
+        canLine.style.left = `${((binlogStart - this.start_date) / (this.end_date - this.start_date)) * 100}%`;
+        canLine.style.maxWidth = `${100 - parseFloat(canLine.style.left)}%`;
+      } else {
+        canLine.style.width = `${0}%`;
         // if(dats.incre_dates.length<=0){
         //   this.$message.warning('所选时间区间没有可选择时间点，请修改时间区间~');
         //   this.showLine = false;
@@ -139,122 +143,120 @@ export default {
         // }
       }
 
-      //设置备份时间点数组
-      let dates = this.deadlines
+      // 设置备份时间点数组
+      const dates = this.deadlines;
       this.incre_dates = dates;
-      this.allIncre = dates.concat([this.binlogDate,this.fullDate]);//备份时间点加上binlog结束时间点和fullDate
+      this.allIncre = dates.concat([this.binlogDate, this.fullDate]);// 备份时间点加上binlog结束时间点和fullDate
 
-      this.clickDot(this.fullDate);//设置默认选择点
+      this.clickDot(this.fullDate);// 设置默认选择点
 
-      this.timeline = dates[dates.length-1];
+      this.timeline = dates[dates.length - 1];
 
-      //添加提示时间点---0点提示
-      this.dateTips=[];
+      // 添加提示时间点---0点提示
+      this.dateTips = [];
       // let days = Math.abs(this.$moment(this.endValue).endOf('day').diff(this.$moment(this.startValue).startOf('day'), 'days'));
-      for(let i=0;i<this.deadlines.length;i++){
-        this.dateTips.push(this.deadlines[i])
+      for (let i = 0; i < this.deadlines.length; i += 1) {
+        this.dateTips.push(this.deadlines[i]);
       }
-      // for(let i=0;i<=days;i++){
+      // for(let i=0;i<=days;i+=1){
       //   this.dateTips.push(this.$moment(this.startValue).add(i, 'd').startOf('day').format('X'));
       // }
       // }
 
       // });
     },
-    //点击时间轴---计算百分比
-    lineMouseDown(e){
-      let allLineTime = this.$refs.allLineTime;
-      let percentNum = (e.offsetX-6)/(allLineTime.offsetWidth*1);
+    // 点击时间轴---计算百分比
+    lineMouseDown(e) {
+      const { allLineTime } = this.$refs;
+      const percentNum = (e.offsetX - 6) / (allLineTime.offsetWidth * 1);
 
       this.setSelTime(percentNum);
     },
-    //可选择线的区域点击
-    canLineMouseDown(e){
-      let canLine = this.$refs.canLine;
-      let allLineTime = this.$refs.allLineTime;
-      let percentNum = e.offsetX/(allLineTime.offsetWidth*1);
-      if(parseFloat(canLine.style.left)>0){
-        percentNum = e.offsetX/(allLineTime.offsetWidth*1)+(parseFloat(canLine.style.left)/100);
+    // 可选择线的区域点击
+    canLineMouseDown(e) {
+      const { canLine } = this.$refs;
+      const { allLineTime } = this.$refs;
+      let percentNum = e.offsetX / (allLineTime.offsetWidth * 1);
+      if (parseFloat(canLine.style.left) > 0) {
+        percentNum = e.offsetX / (allLineTime.offsetWidth * 1) + (parseFloat(canLine.style.left) / 100);
       }
       this.setSelTime(percentNum);
     },
-    //点击备份点---计算百分比
-    clickDot(incre){
-      let percentNum = (incre-this.start_date)/(this.end_date-this.start_date);
+    // 点击备份点---计算百分比
+    clickDot(incre) {
+      const percentNum = (incre - this.start_date) / (this.end_date - this.start_date);
       this.setSelTime(percentNum);
     },
-    //设置当前值
-    setSelTime(percentNum){
-      let selDot = this.$refs.selDot;
+    // 设置当前值
+    setSelTime(percentNum) {
+      const { selDot } = this.$refs;
       selDot.classList.remove('sel_dot_left');
       selDot.classList.remove('sel_dot_right');
 
       let percent = percentNum;
-      this.timeline= (this.end_date-this.start_date)*percent+this.start_date;
-      //如果当前值不在binlog范围内，则不可以滑动，只能选择就近的点
-      if(this.timeline>this.binlogDate || this.timeline<this.fullDate){
-        this.allIncre.sort((a,b)=>{
-          return Math.abs(a-this.timeline)-Math.abs(b-this.timeline);
-        });
+      this.timeline = (this.end_date - this.start_date) * percent + this.start_date;
+      // 如果当前值不在binlog范围内，则不可以滑动，只能选择就近的点
+      if (this.timeline > this.binlogDate || this.timeline < this.fullDate) {
+        this.allIncre.sort((a, b) => Math.abs(a - this.timeline) - Math.abs(b - this.timeline));
         this.timeline = this.allIncre[0];
-        percent = (this.timeline-this.start_date)/(this.end_date-this.start_date);
+        percent = (this.timeline - this.start_date) / (this.end_date - this.start_date);
       }
-      //设置选中点日期时间
-      this.selTime = moment(this.timeline*1000).format('YYYY-MM-DD HH:mm:ss');
-      selDot.style.left = percent*100 + '%' ;
+      // 设置选中点日期时间
+      this.selTime = moment(this.timeline * 1000).format('YYYY-MM-DD HH:mm:ss');
+      selDot.style.left = `${percent * 100}%`;
 
-      //大于90%或者小于10%，提示框位置变化
-      if(percent*100<10){
+      // 大于90%或者小于10%，提示框位置变化
+      if (percent * 100 < 10) {
         selDot.classList.add('sel_dot_left');
       }
-      if(percent*100>90){
+      if (percent * 100 > 90) {
         selDot.classList.add('sel_dot_right');
       }
-
     },
-    //时间轴推拽
-    dragDown(e){
-      let allLineTimeWidth = this.$refs.allLineTime.offsetWidth*1;
-      let selDot = this.$refs.selDot;
-      //算出鼠标相对元素的位置
-      let disX = e.clientX - selDot.offsetLeft;
+    // 时间轴推拽
+    dragDown(e) {
+      const allLineTimeWidth = this.$refs.allLineTime.offsetWidth * 1;
+      const { selDot } = this.$refs;
+      // 算出鼠标相对元素的位置
+      const disX = e.clientX - selDot.offsetLeft;
 
-      document.onmousemove = (e)=>{//鼠标按下并移动的事件
-        //用鼠标的位置减去鼠标相对元素的位置，得到元素的位置
-        let left = (e.clientX - disX)/allLineTimeWidth*100;
-
-        //移动当前元素
-        if(left>=100){
+      document.onmousemove = (e) => { // 鼠标按下并移动的事件
+        // 用鼠标的位置减去鼠标相对元素的位置，得到元素的位置
+        // let left = (e.clientX - disX) / allLineTimeWidth * 100;
+        let left = ((e.clientX - disX) / allLineTimeWidth) * 100;
+        // 移动当前元素
+        if (left >= 100) {
           left = 100;
-        }else if(left<=0){
+        } else if (left <= 0) {
           left = 0;
         }
-        this.setSelTime(left/100);
+        this.setSelTime(left / 100);
       };
       document.onmouseup = () => {
         document.onmousemove = null;
         document.onmouseup = null;
       };
     },
-    //设置备份点位置
-    setLeft(incre, i){
-      if(i<=this.expireIndex){
-        return  `left:${(incre-this.start_date)/(this.end_date-this.start_date)*100}%;border: 2px solid #ccc;`
+    // 设置备份点位置
+    setLeft(incre, i) {
+      if (i <= this.expireIndex) {
+        return `left:${((incre - this.start_date) / (this.end_date - this.start_date)) * 100}%;border: 2px solid #ccc;`;
       }
-      return  `left:${(incre-this.start_date)/(this.end_date-this.start_date)*100}%;`
+      return `left:${((incre - this.start_date) / (this.end_date - this.start_date)) * 100}%;`;
     },
-    setText(i){
-      if(i<=this.expireIndex){
-        return  `color: #ccc;`
+    setText(i) {
+      if (i <= this.expireIndex) {
+        return 'color: #ccc;';
       }
-    }
+      return false;
+    },
   },
   watch: {
     ddls() {
-      this.$nextTick(()=>{
+      this.$nextTick(() => {
         this.getBackupTimeline();
-      })
-    }
+      });
+    },
   },
 };
 </script>

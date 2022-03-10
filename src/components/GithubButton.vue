@@ -4,8 +4,8 @@
 
 <script>
 export default {
-    name: 'GithubButton'
-}
+  name: 'GithubButton',
+};
 </script>
 
 <style scoped>
