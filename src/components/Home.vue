@@ -409,36 +409,30 @@ export default {
 
 <style scoped>
 /* /deep/ .el-table tbody tr { pointer-events:; } */
-/* /deep/ .el-input--mini .el-input__inner { */
-.el-input--mini .el-input__inner {
+/deep/ .el-input--mini .el-input__inner {
   height: 20px;
   line-height: 20px;
 }
 
-/* /deep/ .el-input--mini .el-input__icon { */
-.el-input--mini .el-input__icon {
+/deep/ .el-input--mini .el-input__icon {
   line-height: 20px;
 }
 
-/* /deep/ .el-checkbox__inner { */
-.el-checkbox__inner {
+/deep/ .el-checkbox__inner {
   height: 20px;
   width: 20px;
 }
 
-/* /deep/ .el-button { */
-.el-button {
+/deep/ .el-button {
   height: 20px;
   padding: 0px 5px;
 }
 
-/* /deep/ .el-checkbox-button--mini .el-checkbox-button__inner { */
-.el-checkbox-button--mini .el-checkbox-button__inner {
+/deep/ .el-checkbox-button--mini .el-checkbox-button__inner {
   padding: 3px 10px;
 }
 
-/* /deep/ .el-checkbox__inner::after { */
-.el-checkbox__inner::after {
+/deep/ .el-checkbox__inner::after {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   content: "";
@@ -459,8 +453,7 @@ export default {
   transform-origin: center;
 }
 
-/* /deep/ .el-checkbox__input.is-indeterminate .el-checkbox__inner::before { */
-.el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+/deep/ .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
   height: 6px;
   top: 6px;
 }

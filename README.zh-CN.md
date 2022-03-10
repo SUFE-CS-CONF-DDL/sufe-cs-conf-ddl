@@ -14,4 +14,4 @@ code blocks
 ## 贡献
 
 当前由 @SUFEHeisenberg 创建. 如果您对共同分维护本项目感兴趣，请邮箱私信我(xxxx@163.sufe.edu.cn)。
-灵感启发来自 ai-deadlines 和 ccfddl等优秀项目.
+灵感启发来自 [ai-deadlines])(https://aideadlin.es/) 及 [ccfddl](https://ccfddl.github.io/).等优秀项目.
