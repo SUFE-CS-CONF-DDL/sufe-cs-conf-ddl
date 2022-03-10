@@ -14,4 +14,4 @@ code blocks
 ## Contribution
 Created by  @SUFEHeisenberg by now. If you are interesed in maintaining this project, private message me via my email(xxxx@163.sufe.edu.cn)
 
-Inspried by excellent projects: [ai-deadlines])(https://aideadlin.es/) and [ccfddl](https://ccfddl.github.io/).
+Inspried by excellent projects: [ai-deadlines](https://aideadlin.es/) and [ccfddl](https://ccfddl.github.io/).
