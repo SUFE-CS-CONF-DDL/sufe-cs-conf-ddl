@@ -8,17 +8,17 @@
             </span>
         </el-row>
         <el-row class = 'subtitle'>
-            Countdowns to CCF conference deadlines. To add/edit a conference, <a style="color: #666666" href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/pulls">send a pull request.</a>
+            Countdowns to tenure track cs conference. To add/edit a conference, <a style="color: #666666" href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/pulls">send a pull request.</a>
         </el-row>
     </section>
 </template>
 
 <script>
-import GithubButtonVue from './GithubButton.vue';
+import GithubButton from './GithubButton.vue';
 
 export default {
   name: 'Header',
-  components: { GithubButtonVue },
+  components: { GithubButton },
   data() {
     return {
       showLatestConf: false,
@@ -49,7 +49,11 @@ export default {
 
 <style scoped>
 .title{
-    font-size: 15px;
-    color: #666666;
+  font-size: 29px;
+  color: #2c3e50;
+}
+.subtitle{
+  padding-top: 15px;
+  color: #666666;
 }
 </style>

@@ -7,6 +7,7 @@ module.exports = {
       title: 'sufe-cs-conf-ddl',
     },
   },
+  runtimeCompiler: true,
 };
 
 // const { defineConfig } = require('@vue/cli-service')

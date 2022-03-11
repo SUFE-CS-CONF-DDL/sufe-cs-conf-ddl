@@ -1,27 +1,27 @@
 <template>
   <div class="time_con">
-      <div class="line_time">
-        <div class="all_line">
-          <!-- <div class="all_line"> -->
-          <div class="line" ref="allLineTime">
-            <!-- 可以滑动的线 -->
-            <div class="can_line" ref="canLine"></div>
-            <!-- 参考点 -->
-            <div class="reference" v-for="(dateTip,dt) in dateTips" :key="'tips-'+dt" :style="setLeft(dateTip)">
-              <em v-if="!((dt===0&&isSingle)||(_isMobile()&&dateTips.length>6&&(dt%3===1||dt%3===2)))" v-text="formatter(dateTip,1, dt)" ></em>
-            </div>
-            <!-- 备份点 -->
-            <div class="dot dot_all" v-for="(incre,i) in incre_dates" :key="i" :style="setLeft(incre,i)">
-              <em v-text="formatter(incre)" :style="setText(i)"></em>
-            </div>
-            <!-- 可滑动点 -->
-            <div class="dot sel_dot" ref="selDot">
-                <em>{{selTime}}</em>
-            </div>
+    <div class="line_time">
+      <div class="all_line">
+        <!-- <div class="all_line"> -->
+        <div class="line" ref="allLineTime">
+          <!-- 可以滑动的线 -->
+          <div class="can_line" ref="canLine"></div>
+          <!-- 参考点 -->
+          <div class="reference" v-for="(dateTip,dt) in dateTips" :key="'tips-'+dt" :style="setLeft(dateTip)">
+            <em v-if="!((dt===0&&isSingle)||(_isMobile()&&dateTips.length>6&&(dt%3===1||dt%3===2)))" v-text="formatter(dateTip,1, dt)" ></em>
+          </div>
+          <!-- 备份点 -->
+          <div class="dot dot_all" v-for="(incre,i) in incre_dates" :key="i" :style="setLeft(incre,i)">
+            <em v-text="formatter(incre)" :style="setText(i)"></em>
+          </div>
+          <!-- 可滑动点 -->
+          <div class="dot sel_dot" ref="selDot">
+            <em>{{selTime}}</em>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -70,8 +70,8 @@ export default {
           //     - (pre - this.start_date) / (this.end_date - this.start_date) * 100
           //     < 8) return '';
           if (((cur - this.start_date) / (this.end_date - this.start_date)) * 100
-              - ((pre - this.start_date) / (this.end_date - this.start_date)) * 100
-              < 8) return '';
+            - ((pre - this.start_date) / (this.end_date - this.start_date)) * 100
+            < 8) return '';
         }
         return `${moment(value * 1000).format('MM/DD')}`;
       }
@@ -248,7 +248,6 @@ export default {
       if (i <= this.expireIndex) {
         return 'color: #ccc;';
       }
-      return false;
     },
   },
   watch: {

@@ -1,12 +1,10 @@
 <template>
   <section>
     <Header></Header>
-    <el-checkbox style="padding-top: 10px;width: 33%" :indeterminate="isIndeterminate"
-    v-model="checkAll" @change="handleCheckAllChange">
+    <el-checkbox style="padding-top: 10px;width: 33%" :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange">
       <span style="color: #666666">全选</span></el-checkbox>
     <el-checkbox-group v-model="checkList" @change="handleCheckedChange">
-      <el-checkbox class="boxes" size="medium" v-for="item in subList" :label="item.sub" :key="item.sub">
-        <span style="color: #666666">{{formatSubName(item)}}</span></el-checkbox>
+      <el-checkbox class="boxes" size="medium" v-for="item in subList" :label="item.sub" :key="item.sub"><span style="color: #666666">{{formatSubName(item)}}</span></el-checkbox>
     </el-checkbox-group>
     <el-row class="timezone">
       <div style="float: left">
@@ -15,8 +13,7 @@
       <div style="float: left; width: 155px">
         <el-input prefix-icon="el-icon-search" size="mini"
                   v-model="input" placeholder="search conference"
-                  @change="handleInputChange"
-                >
+                  @change="handleInputChange">
         </el-input>
       </div>
       <div style="float: right">
@@ -37,8 +34,7 @@
           <div :class="{ 'conf-fin': scope.row.status === 'FIN' }">
             <el-row class="conf-title">
               <a :href="generateDBLP(scope.row.dblp)">{{scope.row.title}}</a> {{scope.row.year}}
-              <!-- left a bug to do!!! error    Visible, non-interactive elements with click handlers must have at least one keyboard listener -->
-              <!-- <i v-if="scope.row.isLike===true" class="el-icon-star-on" style="color: #FBCA04" @click="handleClickIcon(scope.row, true)"/><i v-else class="el-icon-star-off" @click="handleClickIcon(scope.row, false)"/> -->
+              <i v-if="scope.row.isLike===true" class="el-icon-star-on" style="color: #FBCA04"/><i v-else class="el-icon-star-off" />
             </el-row>
             <el-row>{{scope.row.date+' '+scope.row.place}}</el-row>
             <el-row class="conf-des">{{scope.row.description}}</el-row>
@@ -47,7 +43,7 @@
               <span style="color: #409eff" v-show="scope.row.comment"><b>NOTE:</b> {{scope.row.comment}}</span>
             </el-row>
             <el-row style="padding-top: 5px"><span class="conf-sub">{{scope.row.subname}}</span></el-row>
-            </div>
+          </div>
         </template>
       </el-table-column>
       <el-table-column>
@@ -59,11 +55,11 @@
                 <template slot-scope="props">{{ props.days }} {{ props.hours }} {{ props.minutes }} {{ props.seconds }}</template>
               </countdown>
               <el-popover
-                  placement="right"
-                  trigger="click">
+                placement="right"
+                trigger="click">
                 <el-row>
                   <img src="//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png#" srcset="//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png 2x ,//ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_3_2x.png# 1x"
-                  alt="" aria-hidden="true" style="width:20px;height:20px;vertical-align: middle">
+                       alt="" aria-hidden="true" style="width:20px;height:20px;vertical-align: middle">
                   <span  style="padding-left: 5px">
                     <a :href="formatGoogleCalendar(scope.row)"
                        target="_blank" rel="nofollow">Google Calendar</a>
@@ -81,7 +77,7 @@
               </div>
             </el-row>
             <el-row>website: <a :href="scope.row.link">{{ scope.row.link }}</a> </el-row>
-  <!--          <el-row>subscribe</el-row>-->
+            <!--          <el-row>subscribe</el-row>-->
             <TimeLine v-if="scope.row.status === 'RUN'" :ddls="scope.row.ddls"></TimeLine>
           </div>
         </template>
@@ -89,18 +85,18 @@
     </el-table>
     <el-row style="padding-top: 8px">
       <div style="float: left; color: #666666;font-size: 12px;">
-        <div>ccf-deadlines is created and maintained by <a href="https://github.com/SUFEHeisenberg">@SUFEHeisenberg</a>.</div>
+        <div>sufe-cs-conference-deadlines project is created and maintained by <a href="https://github.com/SUFEHeisenberg">@SUFEHeisenberg</a>.</div>
         <div style="padding-top: 3px">If you find it useful, STAR the project.</div>
       </div>
       <div style="float: right">
         <el-pagination
-            background
-            small
-            layout="prev, pager, next"
-            :page-size=pageSize
-            @current-change="handleCurrentChange"
-            :current-page="page"
-            :total=showNumber>
+          background
+          small
+          layout="prev, pager, next"
+          :page-size=pageSize
+          @current-change="handleCurrentChange"
+          :current-page="page"
+          :total=showNumber>
         </el-pagination>
       </div>
     </el-row>
@@ -360,12 +356,9 @@ export default {
     },
     formatGoogleCalendar(row) {
       return `${'https://www.google.com/calendar/render?action=TEMPLATE'
-          + '&text='}${row.title}+${row.year
-      }&dates=${moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g, '')}/${moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g, '')
-      }&details=${row.comment
-      }&location=Online`
-          + `&ctz=${this.timeZone
-          }&sf=true&output=xml`;
+        + '&text='}${row.title}+${row.year}&dates=${moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g, '')}/${moment(row.deadline + this.utcMap.get(row.timezone)).toISOString().replace(/-|:|\.\d\d\d/g, '')}&details=${row.comment}&location=Online`
+        + `&ctz=${this.timeZone
+        }&sf=true&output=xml`;
     },
     _isMobile() {
       const flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);

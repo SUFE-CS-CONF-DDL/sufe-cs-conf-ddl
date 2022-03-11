@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo1.png"> -->
+    <img alt="SIME AILAB logo" src="./assets/logo1.png">
+    <Home></Home>
   </div>
 </template>
 
@@ -17,12 +18,12 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-left: auto;
   margin-right: auto;
   max-width: 980px;
-  color: #2c3e50;
+  /*color: #2c3e50;*/
 }
 </style>
