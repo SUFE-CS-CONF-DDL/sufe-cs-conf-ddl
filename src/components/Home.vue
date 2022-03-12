@@ -30,7 +30,7 @@
       :show-header="false"
       style="width: 100%">
       <el-table-column>
-        <template slot-scope="scope">
+        <template v-slot:default="scope">
           <div :class="{ 'conf-fin': scope.row.status === 'FIN' }">
             <el-row class="conf-title">
               <a :href="generateDBLP(scope.row.dblp)">{{scope.row.title}}</a> {{scope.row.year}}
@@ -47,12 +47,13 @@
         </template>
       </el-table-column>
       <el-table-column>
-        <template slot-scope="scope">
+        <template v-slot:default="scope">
           <div :class="{ 'conf-fin': scope.row.status === 'FIN' }">
             <el-row class="conf-timer">
               <div v-if="scope.row.status === 'TBD'" style="color: black">TBD</div>
               <countdown style="color: black" v-else :time="scope.row.remain" :transform="transform">
-                <template slot-scope="props">{{ props.days }} {{ props.hours }} {{ props.minutes }} {{ props.seconds }}</template>
+<!--                {{scope.row.remain}}-->
+                <template v-slot:default="props">{{ props.days }} {{ props.hours }} {{ props.minutes }} {{ props.seconds }}</template>
               </countdown>
               <el-popover
                 placement="right"
@@ -265,10 +266,21 @@ export default {
 
       this.showList = [];
       const allList = [];
-      const likesList = [];
-      allList.push(runList);
-      allList.push(tbdList);
-      allList.push(finList);
+      let likesList = [];
+      // allList.push(runList);
+      // allList.push(tbdList);
+      // allList.push(finList);
+      for (let i = 0; i < runList.length; i += 1) {
+        allList.push(runList[i]);
+      }
+      // eslint-disable-next-line no-plusplus
+      for (let i = 0; i < tbdList.length; i += 1) {
+        allList.push(tbdList[i]);
+      }
+      // eslint-disable-next-line no-plusplus
+      for (let i = 0; i < finList.length; i += 1) {
+        allList.push(finList[i]);
+      }
       // allList.push.apply(allList, runList);
       // allList.push.apply(allList, tbdList);
       // allList.push.apply(allList, finList);
@@ -280,8 +292,9 @@ export default {
           allList.splice(i, 1);
         }
       }
-      likesList.reverse();
-      likesList.push(allList);
+      // likesList.reverse();
+      // likesList.push(allList);
+      likesList = allList;
       // likesList.push.apply(likesList, allList);
       this.showList = likesList;
       this.showNumber = this.showList.length;
