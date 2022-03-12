@@ -1,0 +1,15 @@
+---
+- name: 并行与分布计算
+  sub: PDC
+- name: 计算机图形学与多媒体
+  sub: CGM
+- name: 理论计算机
+  sub: TC
+- name: 人工智能
+  sub: AI
+- name: 软件工程
+  sub: SE
+- name: 数据库与信息检索
+  sub: DBIR
+- name: 网络与信息安全
+  sub: NSC

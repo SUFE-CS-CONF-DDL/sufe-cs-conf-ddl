@@ -2,7 +2,6 @@
   description: International Conference on Tools with Artificial Intellignce
   sub: AI
   rank: C
-  TierLevel: ThirdTier
   dblp: ictai
   confs:
     - year: 2021

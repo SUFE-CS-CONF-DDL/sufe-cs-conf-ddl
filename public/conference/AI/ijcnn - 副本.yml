@@ -2,7 +2,6 @@
   description: International Joint Conference on Artificial Intelligence
   sub: AI
   rank: A
-  TierLevel: SecondTier
   dblp: ijcai
   confs:
     - year: 2022

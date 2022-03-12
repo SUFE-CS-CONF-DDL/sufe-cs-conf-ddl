@@ -1,0 +1,18 @@
+- title: IJCNN
+  description: International Joint Conference on Neural Networks
+  sub: AI
+  rank: C
+  TierLevel: ThirdTier
+  dblp: ijcnn
+  confs:
+    - year: 2022
+      id: ijcnn22
+      link: https://wcci2022.org/
+      timeline:
+        - deadline: '2022-01-31 23:59:00'
+          comment: 'title and abstrct'
+        - deadline: '2022-02-14 23:59:00'
+          comment: 'full paper'
+      timezone: AoE
+      date: July 18-23, 2022.
+      place: Centro Congressi Padova, Italy

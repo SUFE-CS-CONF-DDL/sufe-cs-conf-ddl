@@ -1,0 +1,16 @@
+- title: ICANN
+  description: International Conference on Artificial Neural Networks
+  sub: AI
+  rank: C
+  TierLevel: ThirdTier
+  dblp: icann
+  confs:
+    - year: 2022
+      id: icann22
+      link: https://e-nns.org/icann2022/
+      timeline:
+        - deadline: '2022-04-23 23:59:00'
+          comment: 'full paper and extended abstract submission'
+      timezone: UTC+0
+      date: September 6-9, 2022
+      place: Bristol, United Kingdom

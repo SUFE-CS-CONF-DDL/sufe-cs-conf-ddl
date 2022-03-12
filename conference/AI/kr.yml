@@ -1,0 +1,18 @@
+- title: KR
+  description: International Conference on Principles of Knowledge Representation and Reasoning
+  sub: AI
+  rank: B
+  TierLevel: ThirdLevel
+  dblp: kr
+  confs:
+    - year: 2022
+      id: KR2022
+      link: https://kr2022.cs.tu-dortmund.de/
+      timeline:
+        - deadline: '2021-02-02 23:59:59'
+          comments: 'title and abstract'
+        - deadline: '2022-02-11 23:59:59'
+          comments: 'full paper'
+      timezone: AoE
+      date: July 31-August 29, 2022
+      place: Haifa, Israel
