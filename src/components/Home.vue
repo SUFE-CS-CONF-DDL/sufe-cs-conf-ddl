@@ -60,8 +60,7 @@
             <el-row class="conf-timer">
               <div v-if="scope.row.status === 'TBD'" style="color: black">TBD</div>
               <countdown style="color: black" v-else :time="scope.row.remain" :transform="transform">
-                {{scope.row.remain}}
-                <template v-slot:defult="props">{{ props.days }} {{ props.hours }} {{ props.minutes }} {{ props.seconds }}</template>
+                <template v-slot:default="props">{{ props.days }} {{ props.hours }} {{ props.minutes }} {{ props.seconds }}</template>
               </countdown>
               <el-popover
                 placement="right"
@@ -86,7 +85,7 @@
               </div>
             </el-row>
             <el-row>website: <a :href="scope.row.link">{{ scope.row.link }}</a> </el-row>
-            <!--          <el-row>subscribe</el-row>-->
+<!--            <el-row>subscribe</el-row>-->
             <TimeLine v-if="scope.row.status === 'RUN'" :ddls="scope.row.ddls"></TimeLine>
           </div>
         </template>

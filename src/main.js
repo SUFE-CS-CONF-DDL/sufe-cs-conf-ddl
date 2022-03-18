@@ -13,7 +13,7 @@ import App from './App.vue';
 
 Vue.use(ElementUI);
 Vue.use(VueResource);
-Vue.use(VueCountdown.name, VueCountdown);
+Vue.component(VueCountdown.name, VueCountdown);
 
 const options = {
   namespace: 'vuejs__',
