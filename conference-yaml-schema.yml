@@ -1,5 +1,5 @@
 $schema: http://json-schema.org/draft-07/schema#
-description: Validation schema for CCFDDL Conference Specification 3.0.X.
+description: Validation schema for SUFE-CS-CONF-DDL Specification 3.0.X.
 type: array
 items:
   type: object
@@ -8,6 +8,7 @@ items:
     - description
     - sub
     - rank
+    - TierLevel
     - dblp
     - confs
   properties:
@@ -35,6 +36,14 @@ items:
         - A
         - B
         - C
+        - /
+    TierLevel:
+      description: The Tier that the conference is ranked in SUFE SIME tenure track lists, e.g., First, Second, Third
+      type: string
+      enum:
+        - First
+        - Second
+        - Third
     dblp:
       description: The suffix in dblp url, e.g., iccv in dblp.uni-trier.de/db/conf/iccv
       type: string

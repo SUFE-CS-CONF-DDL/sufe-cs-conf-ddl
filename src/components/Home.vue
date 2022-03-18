@@ -23,6 +23,13 @@
           </el-checkbox-button>
         </el-checkbox-group>
       </div>
+      <div style="float: left">
+        <el-checkbox-group v-model="tierList" size="mini" @change="handleTierChange" class="tierbox">
+          <el-checkbox-button v-for="tier in tieroptions" :label="tier" :key="tier">
+            {{tier}} Tier
+          </el-checkbox-button>
+        </el-checkbox-group>
+      </div>
     </el-row>
     <el-row class="zonedivider"></el-row>
     <el-table
@@ -39,6 +46,7 @@
             <el-row>{{scope.row.date+' '+scope.row.place}}</el-row>
             <el-row class="conf-des">{{scope.row.description}}</el-row>
             <el-row>
+              <el-tag size="mini" type="" effect="plain">{{scope.row.tier}} Tier</el-tag>
               <el-tag size="mini" type="" effect="plain">CCF {{scope.row.rank}}</el-tag>
               <span style="color: #409eff" v-show="scope.row.comment"><b>NOTE:</b> {{scope.row.comment}}</span>
             </el-row>
@@ -52,8 +60,8 @@
             <el-row class="conf-timer">
               <div v-if="scope.row.status === 'TBD'" style="color: black">TBD</div>
               <countdown style="color: black" v-else :time="scope.row.remain" :transform="transform">
-<!--                {{scope.row.remain}}-->
-                <template v-slot:default="props">{{ props.days }} {{ props.hours }} {{ props.minutes }} {{ props.seconds }}</template>
+                {{scope.row.remain}}
+                <template v-slot:defult="props">{{ props.days }} {{ props.hours }} {{ props.minutes }} {{ props.seconds }}</template>
               </countdown>
               <el-popover
                 placement="right"
@@ -135,10 +143,13 @@ export default {
       timeZone: '',
       utcMap: new Map(),
       rankoptions: ['A', 'B', 'C'],
+      tieroptions: ['First', 'Second', 'Third'],
       typesList: [],
       rankList: [],
+      tierList: [],
       cachedLikes: [],
       cachedRanks: [],
+      cachedTiers: [],
       input: '',
     };
   },
@@ -174,6 +185,7 @@ export default {
             curItem.description = curConf.description;
             curItem.sub = curConf.sub;
             curItem.rank = curConf.rank;
+            curItem.tier = curConf.TierLevel;
             curItem.dblp = curConf.dblp;
             const len = curItem.timeline.length;
             curItem.deadline = curItem.timeline[len - 1].deadline;
@@ -237,12 +249,12 @@ export default {
           }
           this.allconfList.push(curDoc);
         }
-        this.showConf(this.typesList, this.rankList, this.input, 1);
+        this.showConf(this.typesList, this.rankList, this.tierList, this.input, 1);
       }, () => {
         alert('sorry your network is not stable!');
       });
     },
-    showConf(types, rank, input, page) {
+    showConf(types, rank, tier, input, page) {
       let filterList = this.allconfList;
 
       if (types != null && types.length != 0) {
@@ -251,6 +263,10 @@ export default {
 
       if (rank != null && rank.length > 0) {
         filterList = filterList.filter((item) => rank.indexOf(item.rank) >= 0);
+      }
+
+      if (tier != null && tier.length > 0) {
+        filterList = filterList.filter((item) => tier.indexOf(item.tier) >= 0);
       }
 
       if (input != null && input.length > 0) {
@@ -332,15 +348,20 @@ export default {
       this.checkAll = checkedCount === this.subList.length;
       this.isIndeterminate = checkedCount > 0 && checkedCount < this.subList.length;
       this.$ls.set('types', Array.from(this.typesList));
-      this.showConf(this.typesList, this.rankList, this.input, 1);
+      this.showConf(this.typesList, this.rankList, this.tierList, this.input, 1);
     },
     handleInputChange() {
-      this.showConf(this.typesList, this.rankList, this.input, 1);
+      this.showConf(this.typesList, this.rankList, this.tierList, this.input, 1);
     },
     handleRankChange(rank) {
       this.rankList = rank;
       this.$ls.set('ranks', Array.from(this.rankList));
-      this.showConf(this.typesList, this.rankList, this.input, 1);
+      this.showConf(this.typesList, this.rankList, this.tierList, this.input, 1);
+    },
+    handleTierChange(tier) {
+      this.tierList = tier;
+      this.$ls.set('tiers', Array.from(this.tierList));
+      this.showConf(this.typesList, this.tierList, this.tierList, this.input, 1);
     },
     handleCurrentChange(page) {
       this.showConf(this.typesList, this.rankList, this.input, page);
@@ -350,7 +371,7 @@ export default {
       this.checkList = this.typesList;
       this.isIndeterminate = false;
       this.$ls.set('types', Array.from(this.typesList));
-      this.showConf(this.typesList, this.rankList, this.input, 1);
+      this.showConf(this.typesList, this.rankList, this.tierList, this.input, 1);
     },
     handleClickIcon(record, judge) {
       if (judge === true) {
@@ -402,10 +423,16 @@ export default {
       if (!this.cachedRanks) this.cachedRanks = [];
       this.rankList = this.cachedRanks;
     },
+    loadCachedTiers() {
+      this.cachedTiers = this.$ls.get('tiers');
+      if (!this.cachedTiers) this.cachedTiers = [];
+      this.tierList = this.cachedTiers;
+    },
   },
   mounted() {
     // this.loadCachedTypes()
     this.loadCachedRanks();
+    this.loadCachedTiers();
     this.loadCachedLikes();
     this.loadUTCMap();
     this.loadFile();
@@ -469,6 +496,10 @@ export default {
 }
 
 .rankbox {
+  padding-top: 1px;
+}
+
+.tierbox {
   padding-top: 1px;
 }
 
