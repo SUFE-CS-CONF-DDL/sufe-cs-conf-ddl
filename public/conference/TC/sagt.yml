@@ -1,0 +1,15 @@
+- title: SAGT
+  description: International Symposium on Algorithmic Game Theory
+  sub: TC
+  rank: /
+  TierLevel: Third
+  dblp: sagt
+  confs:
+    - year: 2022
+      id: sagt22
+      link: https://www.essex.ac.uk/events/2022/09/11/sagt-2022
+      timeline:
+        - deadline: '2022-05-10 23:59:59'
+      timezone: UTC+0
+      date: September 12-15, 2022
+      place:  Colchester, UK

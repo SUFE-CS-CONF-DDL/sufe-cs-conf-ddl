@@ -2,6 +2,7 @@
   description: Conference on Uncertainty in Artificial Intelligence
   sub: AI
   rank: B
+  TierLevel: Second
   dblp: uai
   confs:
     - year: 2021
@@ -12,3 +13,11 @@
       timezone: UTC+0
       date: July 27-29, 2021
       place: Virtual
+    - year: 2022
+      id: uai22
+      link: http://auai.org/uai2022/
+      timeline:
+        - deadline: '2022-02-25 23:59:00'
+      timezone: AoE
+      date: August 1-5, 2022
+      place: Eindhoven,Netherlands

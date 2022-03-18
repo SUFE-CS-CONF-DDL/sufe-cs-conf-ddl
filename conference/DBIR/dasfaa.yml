@@ -1,7 +1,8 @@
 - title: DASFAA
   description: Database Systems for Advanced Applications
-  sub: DB
+  sub: DBIR
   rank: B
+  TierLevel: Third
   dblp: dasfaa
   confs:
     - year: 2021

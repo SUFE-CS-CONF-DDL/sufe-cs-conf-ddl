@@ -1,7 +1,8 @@
 - title: OOPSLA
-  description:  Conference on Object-Oriented Programming Systems, Languages, and Applications
+  description: Conference on Object-Oriented Programming Systems, Languages, and Applications
   sub: SE
   rank: A
+  TierLevel: Second
   dblp: oopsla
   confs:
     - year: 2022

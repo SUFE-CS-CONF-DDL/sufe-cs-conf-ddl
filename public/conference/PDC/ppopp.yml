@@ -1,7 +1,8 @@
 - title: PPoPP
   description: ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming
-  sub: DS
+  sub: PDC
   rank: A
+  TierLevel: First
   dblp: ppopp
   confs:
     - year: 2021

@@ -1,15 +1,16 @@
-- title: IPDPS
-  description: IEEE International Parallel and Distributed Processing Symposium
-  sub: DS
+- title: ICPADS
+  description: International Conference on Parallel and Distributed Systems
+  sub: PDC
   rank: B
-  dblp: ipps
+  TierLevel: Third
+  dblp: icpads
   confs:
-    - year: 2022
-      id: ipdps22
-      link: https://www.ipdps.org/ipdps2022/
+    - year: 2021
+      id: icpads21
+      link: http://ieee-icpads.net/2021/
       timeline:
-        - abstract_deadline: '2021-10-01 23:59:59'
-          deadline: '2021-10-08 23:59:59'
-      timezone: AoE
-      date: May 30-June 3, 2022
-      place: Lyon, France
+        - abstract_deadline: '2021-07-09 23:59:59'
+          deadline: '2021-07-16 23:59:59'
+      timezone: UTC+8
+      date: December 14-16, 2021
+      place: Beijing

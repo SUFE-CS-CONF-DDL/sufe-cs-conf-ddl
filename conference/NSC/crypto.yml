@@ -1,14 +1,15 @@
 - title: CRYPTO
   description: International Cryptology Conference
-  sub: SC
+  sub: NSC
   rank: A
+  TierLevel: First
   dblp: crypto
   confs:
-    - year: 2021
-      id: crypto21
-      link: https://crypto.iacr.org/2021/
+    - year: 2022
+      id: crypto22
+      link: https://crypto.iacr.org/2022/
       timeline:
-        - deadline: '2021-02-24 21:00:00'
-      timezone: UTC-12
-      date: August 15-19 2021
-      place: Virtual
+        - deadline: '2022-02-17 23:59:59'
+      timezone: AoE
+      date: August 13-18 2022
+      place: Santa Barbara, USA

@@ -1,15 +1,16 @@
 - title: ICICS
   description: International Conference on Information and Communications Security
-  sub: SC
+  sub: NSC
   rank: C
+  TierLevel: Third
   dblp: icics
   confs:
-    - year: 2021
-      id: icics21
-      link: https://icics.cn/
+    - year: 2022
+      id: icics22
+      link: https://icics2022.cyber.kent.ac.uk/
       timeline:
-        - deadline: '2021-05-22 23:59:59'
+        - deadline: '2022-03-21 23:59:59'
           comment: 'Paper Submission deadline'
       timezone: AoE
-      date: September 17-19, 2021
-      place: Chongqing, China
+      date: September 5-8, 2021
+      place: Canterbury, Kent, UK

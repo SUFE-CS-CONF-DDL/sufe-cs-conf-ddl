@@ -1,0 +1,15 @@
+- title: WCNC
+  description: IEEE Wireless Communications and Networking Conference
+  sub: NSC
+  rank: C
+  TierLevel: Third
+  dblp: wcnc
+  confs:
+    - year: 2022
+      id: wcnc22
+      link: https://wcnc2022.ieee-wcnc.org/
+      timeline:
+        - deadline: '2021-10-15 23:59:59'
+      timezone: AoE
+      date: April 10–13, 2022
+      place: Austin, TX, USA

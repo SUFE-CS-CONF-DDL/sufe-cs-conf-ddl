@@ -1,0 +1,16 @@
+- title: TAMC
+  description: ACM Symposium on the Theory of Computing
+  sub: TC
+  rank: /
+  TierLevel: Third
+  dblp: tamc
+  confs:
+    - year: 2022
+      id: stoc22
+      link: https://lxy.tjut.edu.cn/TAMC2022.htm
+      timeline:
+        - abstract_deadline: '2022-04-24 23:59:59'
+          deadline: '2022-05-01 23:59:59'
+      timezone: UTC+8
+      date: September 16-18, 2022
+      place: Tianjin, China

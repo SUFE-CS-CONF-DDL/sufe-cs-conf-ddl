@@ -1,15 +1,22 @@
 - title: ICDT
   description: International Conference on Database Theory
-  sub: DB
+  sub: DBIR
   rank: B
+  TierLevel: Third
   dblp: icdt
   confs:
-    - year: 2022
-      id: icdt22
-      link: https://conferences.inf.ed.ac.uk/edbticdt2022/
+    - year: 2023
+      id: icdt23
+      link: https://www.cs.uoi.gr/~edbticdt2023/
       timeline:
-        - abstract_deadline: '2021-09-06 23:59:59'
-          deadline: '2021-09-13 23:59:59'
+        - deadline: '2022-03-14 23:59:59'
+          comment: 'Submission of Abstract Deadline Round 1'
+        - deadline: '2022-03-21 23:59:59'
+          comment: 'Submission of Full Paper Deadline Round 1'
+        - deadline: '2022-09-14 23:59:59'
+          comment: 'Submission of Abstract Deadline Round 2'
+        - deadline: '2022-09-30 23:59:59'
+          comment: 'Submission of Full Paper Deadline Round 2'
       timezone: AoE
-      date: Mar 29-April 01, 2022
-      place: Edinburgh, UK
+      date: March 28-31, 2023
+      place: Ioannina, Greece

@@ -2,6 +2,7 @@
   description: Annual Conference on Learning Theory
   sub: AI
   rank: B
+  TierLevel: Second
   dblp: colt
   confs:
     - year: 2022

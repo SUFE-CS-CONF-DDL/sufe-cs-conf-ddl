@@ -1,7 +1,8 @@
 - title: CCS
   description: ACM Conference on Computer and Communications Security
-  sub: SC
+  sub: NSC
   rank: A
+  TierLevel: Second
   dblp: ccs
   confs:
     - year: 2020
@@ -34,4 +35,4 @@
           comment: 'the second review cycle'
       timezone: UTC-12
       date: November 14-19, 2022
-      place: Los Angeles, U.S.A.    
+      place: Los Angeles, U.S.A.

@@ -1,0 +1,16 @@
+- title: SODA
+  description: ACM-SIAM Symposium on Discrete Algorithms
+  sub: TC
+  rank: A
+  TierLevel: First
+  dblp: soda
+  confs:
+    - year: 2022
+      id: soda22
+      link: https://www.siam.org/conferences/cm/conference/soda22
+      timeline:
+        - abstract_deadline: '2021-07-05 16:59:59'
+          deadline: '2021-07-12 16:59:59'
+      timezone: UTC-5
+      date: January 9-12, 2022
+      place: Virginia, U.S.

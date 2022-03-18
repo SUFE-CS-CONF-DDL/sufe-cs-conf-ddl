@@ -1,0 +1,15 @@
+- title: ESA
+  description: European Symposium on Algorithms
+  sub: TC
+  rank: B
+  TierLevel: Third
+  dblp: esa
+  confs:
+    - year: 2022
+      id: esa22
+      link: https://www.esa.org/montreal2022
+      timeline:
+        - deadline: '2022-03-03 23:59:59'
+      timezone: AoE
+      date: August 14-19, 2022
+      place: Montréal, Québec, Canada

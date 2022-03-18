@@ -1,7 +1,8 @@
 - title: ASIACRYPT
   description: International Conference on the Theory and Application of Cryptology and Information Security
-  sub: SC
+  sub: NSC
   rank: B
+  TierLevel: Second
   dblp: asiacrypt
   confs:
     - year: 2021

@@ -2,6 +2,7 @@
   description: IEEE International Conference on Software Quality, Reliability and Security
   sub: SE
   rank: C
+  TierLevel: Third
   dblp: qrs
   confs:
     - year: 2021

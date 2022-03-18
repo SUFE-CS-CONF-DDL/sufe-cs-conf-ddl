@@ -1,7 +1,8 @@
 - title: VLDB
   description: International Conference on Very Large Data Bases
-  sub: DB
+  sub: DBIR
   rank: A
+  TierLevel: Second
   dblp: vldb
   confs:
     - year: 2021

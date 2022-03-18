@@ -1,14 +1,15 @@
 - title: ICDM
   description: IEEE International Conference on Data Mining
-  sub: DB
+  sub: DBIR
   rank: B
+  TierLevel: Second
   dblp: icdm
   confs:
-    - year: 2021
-      id: icdm21
-      link: https://icdm2021.auckland.ac.nz/
+    - year: 2022
+      id: icdm22
+      link: https://icdm22.cse.usf.edu/index.html
       timeline:
-        - deadline: '2021-06-12 14:59:00'
-      timezone: UTC+8
-      date: December 7-10, 2021
-      place: Auckland, New Zealand
+        - deadline: '2022-06-10 23:59:00'
+      timezone: UTC-7
+      date: November 30-December 3, 2022
+      place: Orlando,FL,USA

@@ -2,6 +2,7 @@
   description:  IEEE International Conference on Program Comprehension
   sub: SE
   rank: B
+  TierLevel: Second
   dblp: icpc
   confs:
     - year: 2022

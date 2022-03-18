@@ -1,7 +1,8 @@
 - title: SIGIR
   description: International Conference on Research on Development in Information Retrieval
-  sub: DB
+  sub: DBIR
   rank: A
+  TierLevel: Second
   dblp: sigir
   confs:
     - year: 2021

@@ -1,15 +1,16 @@
-- title: IPDPS
-  description: IEEE International Parallel and Distributed Processing Symposium
-  sub: DS
+- title: PACT
+  description: Parallel Architectures and Compilation Techniques
+  sub: PDC
   rank: B
-  dblp: ipps
+  TierLevel: Second
+  dblp: pact
   confs:
     - year: 2022
-      id: ipdps22
-      link: https://www.ipdps.org/ipdps2022/
+      id: pact22
+      link: https://pact22.cs.illinois.edu/
       timeline:
-        - abstract_deadline: '2021-10-01 23:59:59'
-          deadline: '2021-10-08 23:59:59'
+        - abstract_deadline: '2022-04-18 23:59:59'
+          deadline: '2022-04-25 23:59:59'
       timezone: AoE
-      date: May 30-June 3, 2022
-      place: Lyon, France
+      date: October 10–12, 2022
+      place: Chicago, American

@@ -2,6 +2,7 @@
   description: The Annual Conference of the North American Chapter of the Association for Computational Linguistics
   sub: AI
   rank: C
+  TierLevel: Third
   dblp: naacl
   confs:
     - year: 2022

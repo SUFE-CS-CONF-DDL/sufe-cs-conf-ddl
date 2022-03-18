@@ -1,7 +1,8 @@
 - title: RE
-  description:  IEEE International Requirements Engineering Conference
+  description: IEEE International Requirement Engineering Conference
   sub: SE
   rank: B
+  TierLevel: Second
   dblp: re
   confs:
     - year: 2022

@@ -1,0 +1,15 @@
+- title: WINE
+  description: International Workshop on Internet and Network Economics
+  sub: TC
+  rank: /
+  TierLevel: Third
+  dblp: wine
+  confs:
+    - year: 2021
+      id: wine21
+      link: https://hpi.de/wine2021/
+      timeline:
+        - deadline: '2021-06-12 23:59:59'
+      timezone: UTC
+      date: December 14-17, 2021
+      place: Potsdam, Germany

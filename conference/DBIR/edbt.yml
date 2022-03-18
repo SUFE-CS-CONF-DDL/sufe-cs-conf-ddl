@@ -1,7 +1,8 @@
 - title: EDBT
   description: International Conference on Extending Database Technology
-  sub: DB
+  sub: DBIR
   rank: B
+  TierLevel: Second
   dblp: edbt
   confs:
     - year: 2022
@@ -14,9 +15,14 @@
       place: Edinburgh, UK
     - year: 2023
       id: edbt23
-      link: TBD
+      link: https://www.cs.uoi.gr/~edbticdt2023/
       timeline:
-        - deadline: '2022-02-01 23:59:59'
+        - deadline: '2022-06-01 23:59:59'
+          comment: 'Submission Deadline Round 1'
+        - deadline: '2022-09-30 23:59:59'
+          comment: 'Submission Deadline Round 2'
+        - deadline: '2023-02-15 23:59:59'
+          comment: 'Submission Deadline Round 3'
       timezone: AoE
-      date: TBD
-      place: TBD
+      date: March 28-31, 2023
+      place: Ioannina, Greece

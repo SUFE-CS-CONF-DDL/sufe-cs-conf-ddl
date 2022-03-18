@@ -1,8 +1,9 @@
 - title: ICDE
   description: IEEE International Conference on Data Engineering
-  sub: DB
+  sub: DBIR
   rank: A
   dblp: icde
+  TierLevel: Second
   confs:
     - year: 2021
       id: icde21
@@ -14,7 +15,7 @@
       place: Virtual
     - year: 2022
       id: icde22
-      link: https://icde2022.ieeecomputer.my/important-dates/
+      link: https://icde2022.ieeecomputer.my
       timeline:
         - deadline: '2021-07-21 23:59:59'
           comment: 'first round'
@@ -23,3 +24,16 @@
       timezone: UTC-8
       date: May 9-12, 2022
       place: Kuala Lumpur, Malaysia
+    - year: 2023
+      id: icde23
+      link: https://icde2023.ics.uci.edu/
+      timeline:
+        - deadline: '2022-04-25 23:59:59'
+          comment: 'first round'
+        - deadline: '2022-07-08 23:59:59'
+          comment: 'second round'
+        - deadline: '2022-10-08 23:59:59'
+          comment: 'third round'
+      timezone: UTC-8
+      date: April 3–7, 2023
+      place: Anaheim, California, USA 

@@ -1,7 +1,8 @@
 - title: ACM SIGGRAPH
   description: ACM SIGGRAPH Annual Conference
-  sub: CG
+  sub: CGM
   rank: A
+  TierLevel: First
   dblp: siggraph
   confs:
     - year: 2022

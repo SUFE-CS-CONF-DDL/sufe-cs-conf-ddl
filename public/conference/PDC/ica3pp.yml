@@ -1,23 +1,15 @@
-- title: ICPP
-  description: International Conference on Parallel Processing
-  sub: DS
+- title: ICA3PP
+  description: International Conference on Algorithms and Architectures for Parallel Processing
+  sub: PDC
   rank: B
-  dblp: icpp
+  TierLevel: Third
+  dblp: ica3pp
   confs:
-    - year: 2021
-      id: icpp21
-      link: https://oaciss.uoregon.edu/icpp21/
-      timeline:
-        - deadline: '2021-04-16 23:59:59'
-      timezone: AoE
-      date: August 9-12, 2021
-      place: Chicago, USA
     - year: 2022
-      id: icpp22
-      link: https://icpp22.gitlabpages.inria.fr/
+      id: ica3pp22
+      link: https://ica3pp2022.compute.dtu.dk/index.html
       timeline:
-         - abstract_deadline: '2022-04-08 23:59:59'
-           deadline: '2022-04-14 23:59:59'
+         - deadline: '2022-05-15 23:59:59'
       timezone: AoE
-      date: August 29-Sept 12, 2022
-      place: Bordeaux, France
+      date: October 10-12, 2022
+      place: Copenhagen, Denmark

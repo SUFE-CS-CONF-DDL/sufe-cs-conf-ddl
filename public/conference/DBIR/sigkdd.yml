@@ -1,8 +1,9 @@
 - title: SIGKDD
   description: ACM Knowledge Discovery and Data Mining
-  sub: DB
+  sub: DBIR
   rank: A
   dblp: kdd
+  TierLevel: First
   confs:
     - year: 2021
       id: sigkdd21

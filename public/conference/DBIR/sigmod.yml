@@ -1,8 +1,9 @@
 - title: SIGMOD
   description: ACM Conference on Management of Data
-  sub: DB
+  sub: DBIR
   rank: A
   dblp: sigmod
+  TierLevel: First
   confs:
     - year: 2021
       id: sigmod21

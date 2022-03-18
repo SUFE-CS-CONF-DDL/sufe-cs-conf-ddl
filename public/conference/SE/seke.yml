@@ -1,0 +1,17 @@
+- title: SEKE
+  description: International Conference on Software Engineering and Knowledge Engineering
+  sub: SE
+  rank: C
+  TierLevel: Third
+  dblp: seke
+  confs:
+    - year: 2022
+      id: seke22
+      link: http://ksiresearch.org/seke/seke22.html
+      timeline:
+        - deadline: '2022-03-15 23:59:59'
+          comment: 'Submission deadline'
+      timezone: UTC-5
+      date: July 1-10, 2022
+      place: Pittsburgh, USA
+

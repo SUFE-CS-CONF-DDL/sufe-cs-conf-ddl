@@ -1,7 +1,8 @@
 - title: INFOCOM
   description: IEEE International Conference on Computer Communications
-  sub: NW
+  sub: NSC
   rank: A
+  TierLevel: Second
   dblp: infocom
   confs:
     - year: 2021

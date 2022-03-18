@@ -1,7 +1,8 @@
 - title: TrustCom
   description: IEEE International Conference on Trust, Security and Privacy in Computing and Communications
-  sub: SC
+  sub: NSC
   rank: C
+  TierLevel: Third
   dblp: trustcom
   confs:
     - year: 2021
@@ -11,5 +12,5 @@
         - deadline: '2021-04-30 23:59:59'
           comment: 'Paper Submission Deadline'
       timezone: UTC+8
-      date: To be announced
+      date: October 20-22, 2021
       place: Shenyang, China

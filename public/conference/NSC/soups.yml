@@ -1,7 +1,8 @@
 - title: SOUPS
   description: Symposium On Usable Privacy and Security
-  sub: SC
+  sub: NSC
   rank: C
+  
   dblp: soups
   confs:
     - year: 2021

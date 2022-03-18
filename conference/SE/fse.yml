@@ -2,6 +2,7 @@
   description:  ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering
   sub: SE
   rank: A
+  TierLevel: Second
   dblp: sigsoft
   confs:
     - year: 2022

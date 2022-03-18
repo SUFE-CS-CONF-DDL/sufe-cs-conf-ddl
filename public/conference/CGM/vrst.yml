@@ -1,0 +1,15 @@
+- title: VRST
+  description: ACM Symposium on Virtual Reality Software and Technology
+  sub: CGM
+  rank: C
+  TierLevel: Third
+  dblp: vrst
+  confs:
+    - year: 2021
+      id: vrst21
+      link: https://vrst.acm.org/vrst2021/
+      timeline:
+        - deadline: '2021-07-19 23:59:00'
+      timezone: AoE
+      date: December 8-10, 2021
+      place: Osaka, Japan

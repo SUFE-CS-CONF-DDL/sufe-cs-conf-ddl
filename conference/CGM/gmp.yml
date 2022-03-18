@@ -1,0 +1,16 @@
+- title: GMP
+  description: Geometric Modeling and Processing
+  sub: CGM
+  rank: C
+  TierLevel: Third
+  dblp: gmp
+  confs:
+    - year: 2022
+      id: gmp22
+      link: https://indico.oist.jp/event/13/
+      timeline:
+        - abstract_deadline: '2021-12-17 23:59:59'
+          deadline: '2022-12-21 23:59:59'
+      timezone: UTC+0
+      date: May 11-13, 2022
+      place: Okinawa, JAPAN

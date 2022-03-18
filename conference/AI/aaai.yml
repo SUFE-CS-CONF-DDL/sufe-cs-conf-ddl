@@ -2,6 +2,7 @@
   description: AAAI Conference on Artificial Intelligence
   sub: AI
   rank: A
+  TierLevel: Second
   dblp: aaai
   confs:
     - year: 2022

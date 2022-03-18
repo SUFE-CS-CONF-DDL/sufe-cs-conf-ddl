@@ -1,6 +1,7 @@
 - title: ACM MM
   description: ACM International Conference on Multimedia
-  sub: CG
+  sub: CGM
+  TierLevel: Third
   rank: A
   dblp: mm
   confs:

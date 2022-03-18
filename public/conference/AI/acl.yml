@@ -2,6 +2,7 @@
   description: Annual Meeting of the Association for Computational Linguistics
   sub: AI
   rank: A
+  TierLevel: Second
   dblp: acl
   confs:
     - year: 2022

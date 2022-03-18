@@ -1,14 +1,15 @@
 - title: STOC
   description: ACM Symposium on the Theory of Computing
-  sub: CT
+  sub: TC
   rank: A
+  TierLevel: First
   dblp: stoc
   confs:
-    - year: 2021
-      id: stoc21
-      link: http://acm-stoc.org/stoc2021/
+    - year: 2022
+      id: stoc22
+      link: http://acm-stoc.org/stoc2022/
       timeline:
-        - deadline: '2020-11-06 11:59:59'
+        - deadline: '2021-11-04 16:59:59'
       timezone: UTC-5
-      date: June 21-25, 2021
-      place: Virtual
+      date: June 20-24, 2022
+      place: Rome, Italy

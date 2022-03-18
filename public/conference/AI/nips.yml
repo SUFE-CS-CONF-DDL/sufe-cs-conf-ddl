@@ -3,6 +3,7 @@
   sub: AI
   rank: A
   dblp: nips
+  TierLevel: First
   confs:
     - year: 2021
       id: nips21
@@ -13,3 +14,12 @@
       timezone: UTC+0
       date: December 5-14, 2021
       place: Virtual
+    - year: 2022
+      id: nips22
+      link: https://neurips.cc/Conferences/2022
+      timeline:
+        - abstract_deadline: '2022-05-16 13:00:00'
+          deadline: '2021-05-19 13:00:00'
+      timezone: UTC-7
+      date: November 28-December 9, 2022
+      place:  New Orleans, U.S.

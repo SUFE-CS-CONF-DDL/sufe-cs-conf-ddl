@@ -1,0 +1,16 @@
+- title: FAW
+  description: Frontiers of Algorithmics
+  sub: TC
+  rank: /
+  TierLevel: Third
+  dblp: faw
+  confs:
+    - year: 2019
+      id: faw19
+      link: https://people.iiis.tsinghua.edu.cn/~jianli/FAW2019/FAW2019.html
+      timeline:
+        - abstract_deadline: '2018-12-28 23:59:59'
+          deadline: '2019-01-07 23:59:59'
+      timezone: AoE
+      date: April 29 – May 3, 2019
+      place: Sanya, China

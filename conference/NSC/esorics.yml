@@ -1,7 +1,8 @@
 - title: ESORICS
   description: European Symposium on Research in Computer Security
-  sub: SC
+  sub: NSC
   rank: B
+  TierLevel: Second
   dblp: esorics
   confs:
     - year: 2022

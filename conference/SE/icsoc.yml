@@ -2,6 +2,7 @@
   description:  International Conference on Service Oriented Computing
   sub: SE
   rank: B
+  TierLevel: Third
   dblp: icsoc
   confs:
     - year: 2022

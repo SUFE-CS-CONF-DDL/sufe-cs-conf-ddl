@@ -1,8 +1,9 @@
 - title: ICME
   description: The IEEE International Conference on Multimedia & Expo
-  sub: CG
+  sub: CGM
   rank: B
-  dblp: icme
+  TierLevel: Second
+  dblp: icmcs
   confs:
     - year: 2022
       id: icme22

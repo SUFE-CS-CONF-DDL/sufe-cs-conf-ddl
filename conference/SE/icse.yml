@@ -2,6 +2,7 @@
   description: International Conference on Software Engineering
   sub: SE
   rank: A
+  TierLevel: First
   dblp: icse
   confs:
     - year: 2022
