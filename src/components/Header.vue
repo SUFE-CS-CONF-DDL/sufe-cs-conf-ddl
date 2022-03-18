@@ -1,14 +1,16 @@
 <template>
     <section>
         <el-row>
-            <a href="/" class="title">SUFE SIME Tenure Track CS Conference Deadlines</a>
-            <github-button style="padding-left: 5px"></github-button>
+            <img src="ai-lab-logo.png" alt="" style="width:150px;height:150px;vertical-align: middle">
+            <a href="/" class="title">SUFE Tenure Track CS Conference Deadlines</a>
+            <github-button style="padding-left: 5px;vertical-align: text-bottom"></github-button>
             <span v-if="showLatestConf" style="color:#fd3c95;font-weight: bold;">
               Latest: {{this.showStr}} !!!
             </span>
         </el-row>
         <el-row class = 'subtitle'>
-            Countdowns to tenure track cs conference. To add/edit a conference, <a style="color: #666666" href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/pulls">send a pull request.</a>
+            Countdowns to SUFE SIME tenure track CS conference. To add/edit a conference.
+            <a style="color: #666666" href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/pulls">send a pull request.</a>
         </el-row>
     </section>
 </template>

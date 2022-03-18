@@ -92,9 +92,10 @@
       </el-table-column>
     </el-table>
     <el-row style="padding-top: 8px">
-      <div style="float: left; color: #666666;font-size: 12px;">
-        <div>sufe-cs-conference-deadlines project is created and maintained by <a href="https://github.com/SUFEHeisenberg">@SUFEHeisenberg</a>.</div>
-        <div style="padding-top: 3px">If you find it useful, STAR the project.</div>
+      <div style="float: left; color: #666666;font-size: 14px;">
+        <div>sufe-cs-conf-ddl project is created and maintained by <a style="font-weight: bold;" href="https://github.com/SUFEHeisenberg">@SUFEHeisenberg</a> and <a style="font-weight: bold;" href="https://github.com/SUFEHeisenberg">@xiehuiping</a>.</div>
+        <div style="padding-top: 3px">If you find it useful, please collect this website, <a style="font-weight: bold; font-size: 16px;" href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl">SHARE and STAR</a> the project!</div>
+        <div style="padding-top: 3px">If you wanna join us to maintain this project together, please <a style="font-weight: bold" href="wangziyuan@163.sufe.edu.cn">EMAIL me</a>!</div>
       </div>
       <div style="float: right">
         <el-pagination

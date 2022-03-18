@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="SIME AILAB logo" src="./assets/logo1.png">
+<!--    <img alt="SIME AILAB logo" src="ai-lab-logo.png" class="top_logo">-->
     <Home></Home>
   </div>
 </template>
@@ -25,5 +25,11 @@ export default {
   margin-right: auto;
   max-width: 980px;
   /*color: #2c3e50;*/
+
+/* 设置logo格式 */
+
+}
+.top_logo {
+  margin-right: 1.3%;
 }
 </style>
