@@ -86,7 +86,7 @@ The conference category table:
 
 ## Contribution
 Created by  [@SUFEHeisenberg](https://github.com/SUFEHeisenberg) and [@xiehuiping](https://github.com/xiehuiping) by now👨🏻‍💻. 
-If you are interesed in maintaining this project, private message me via my [email](wangziyuan@163.sufe.edu.cn)👏.
+If you are interesed in maintaining this project, contact me via my [email](mailto:wangziyuan@163.sufe.edu.cn)👏.
 
 Inspried by following excellent projects: 
 - [ai-deadlines](https://aideadlin.es/)
