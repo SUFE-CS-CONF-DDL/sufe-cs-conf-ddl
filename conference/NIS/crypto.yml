@@ -1,0 +1,15 @@
+- title: CRYPTO
+  description: International Cryptology Conference
+  sub: NIS
+  rank: A
+  TierLevel: First
+  dblp: crypto
+  confs:
+    - year: 2022
+      id: crypto22
+      link: https://crypto.iacr.org/2022/
+      timeline:
+        - deadline: '2022-02-17 23:59:59'
+      timezone: AoE
+      date: August 13-18 2022
+      place: Santa Barbara, USA

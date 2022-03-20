@@ -1,0 +1,15 @@
+- title: ASIACRYPT
+  description: International Conference on the Theory and Application of Cryptology and Information Security
+  sub: NIS
+  rank: B
+  TierLevel: Second
+  dblp: asiacrypt
+  confs:
+    - year: 2021
+      id: asiacrypt21
+      link: https://asiacrypt.iacr.org/2021/
+      timeline:
+        - deadline: '2021-05-27 11:59:59'
+      timezone: UTC-12
+      date: December 5-9, 2021
+      place: Singapore

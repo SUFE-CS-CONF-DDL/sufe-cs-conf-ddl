@@ -1,0 +1,15 @@
+- title: MASS
+  description: IEEE International Conference on Mobile Ad-Hoc and Smart Systems
+  sub: NIS
+  TierLevel: Third
+  rank: C
+  dblp: mass
+  confs:
+    - year: 2021
+      id: mass21
+      link: https://eng.auburn.edu/conference/ieee-mass2021/
+      timeline:
+        - deadline: '2021-05-15 23:59:59'
+      timezone: UTC-12
+      date: October 4-7, 2021
+      place: Virtual

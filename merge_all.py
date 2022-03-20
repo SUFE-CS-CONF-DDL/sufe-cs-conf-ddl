@@ -9,7 +9,7 @@ import yaml
 
 HOME_DIR = os.path.dirname(os.path.realpath('__file__'))
 all_conf_path = os.path.join(HOME_DIR,'conference')
-all_conf_type = ['PDC','CGM','TC','AI','SE','DBIR','NSC']
+all_conf_type = ['PDC','CGM','TC','AI','SE','DBIR','NIS']
 
 i=0
 for conf_type in all_conf_type:

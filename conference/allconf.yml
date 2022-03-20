@@ -1612,7 +1612,7 @@
 - title: ASIACRYPT
   description: International Conference on the Theory and Application of Cryptology
     and Information Security
-  sub: NSC
+  sub: NIS
   rank: B
   TierLevel: Second
   dblp: asiacrypt
@@ -1627,7 +1627,7 @@
     place: Singapore
 - title: WWW
   description: International World Wide Web Conferences
-  sub: NSC
+  sub: NIS
   rank: A
   TierLevel: Second
   dblp: www
@@ -1652,7 +1652,7 @@
     place: Lyon, France
 - title: ICNP
   description: International Conference on Network Protocols
-  sub: NSC
+  sub: NIS
   rank: C
   TierLevel: Second
   dblp: icnp
@@ -1668,7 +1668,7 @@
     place: Lexington, Kentucky, USA
 - title: EUROCRYPT
   description: European Cryptology Conference
-  sub: NSC
+  sub: NIS
   rank: A
   TierLevel: Second
   dblp: eurocrypt
@@ -1683,7 +1683,7 @@
     place: Trondheim, Norway
 - title: WCNC
   description: IEEE Wireless Communications and Networking Conference
-  sub: NSC
+  sub: NIS
   rank: C
   TierLevel: Third
   dblp: wcnc
@@ -1698,7 +1698,7 @@
     place: Austin, TX, USA
 - title: ICICS
   description: International Conference on Information and Communications Security
-  sub: NSC
+  sub: NIS
   rank: C
   TierLevel: Third
   dblp: icics
@@ -1714,7 +1714,7 @@
     place: Canterbury, Kent, UK
 - title: ICCCN
   description: IEEE International Conference on Computer Communications and Networks
-  sub: NSC
+  sub: NIS
   rank: C
   TierLevel: Third
   dblp: icccn
@@ -1729,7 +1729,7 @@
     place: Virtual
 - title: FSE
   description: Fast Software Encryption
-  sub: NSC
+  sub: NIS
   rank: B
   TierLevel: Third
   dblp: fse
@@ -1755,7 +1755,7 @@
     place: Singapore
 - title: AsiaCCS
   description: Asia Conference on Computer and Communications Security
-  sub: NSC
+  sub: NIS
   rank: C
   TierLevel: Third
   dblp: ccs
@@ -1773,7 +1773,7 @@
     place: Nagasaki, Japan
 - title: CHES
   description: International Conference on Cryptographic Hardware and Embedded Systems
-  sub: NSC
+  sub: NIS
   rank: B
   TierLevel: Third
   dblp: ches
@@ -1795,7 +1795,7 @@
     place: Beijing, China
 - title: MobiCom
   description: ACM Annual International Conference On Mobile Computing And Networking
-  sub: NSC
+  sub: NIS
   rank: A
   TierLevel: First
   dblp: mobicom
@@ -1816,7 +1816,7 @@
 - title: TrustCom
   description: IEEE International Conference on Trust, Security and Privacy in Computing
     and Communications
-  sub: NSC
+  sub: NIS
   rank: C
   TierLevel: Third
   dblp: trustcom
@@ -1832,7 +1832,7 @@
     place: Shenyang, China
 - title: ESORICS
   description: European Symposium on Research in Computer Security
-  sub: NSC
+  sub: NIS
   rank: B
   TierLevel: Second
   dblp: esorics
@@ -1854,7 +1854,7 @@
     place: Copenhagen, Denmark
 - title: INFOCOM
   description: IEEE International Conference on Computer Communications
-  sub: NSC
+  sub: NIS
   rank: A
   TierLevel: Second
   dblp: infocom
@@ -1879,7 +1879,7 @@
     place: Virtual
 - title: S&P
   description: IEEE Symposium on Security and Privacy
-  sub: NSC
+  sub: NIS
   rank: A
   TierLevel: First
   dblp: sp
@@ -1912,7 +1912,7 @@
     place: SAN FRANCISCO, U.S.
 - title: SECON
   description: IEEE International Conference on Sensing, Communication and Networking
-  sub: NSC
+  sub: NIS
   rank: B
   TierLevel: Second
   dblp: secon
@@ -1928,7 +1928,7 @@
     place: Virtual
 - title: CCS
   description: ACM Conference on Computer and Communications Security
-  sub: NSC
+  sub: NIS
   rank: A
   TierLevel: Second
   dblp: ccs
@@ -1966,7 +1966,7 @@
     place: Los Angeles, U.S.A.
 - title: MASS
   description: IEEE International Conference on Mobile Ad-Hoc and Smart Systems
-  sub: NSC
+  sub: NIS
   TierLevel: Third
   rank: C
   dblp: mass
@@ -1981,7 +1981,7 @@
     place: Virtual
 - title: ACISP
   description: Australasia Conference on Information Security and Privacy
-  sub: NSC
+  sub: NIS
   rank: C
   TierLevel: Third
   dblp: acisp
@@ -1997,7 +1997,7 @@
     place: Wollongong, Australia
 - title: CRYPTO
   description: International Cryptology Conference
-  sub: NSC
+  sub: NIS
   rank: A
   TierLevel: First
   dblp: crypto
@@ -2012,7 +2012,7 @@
     place: Santa Barbara, USA
 - title: MobiHoc
   description: International Symposium on Mobile Ad Hoc Networking and Computing
-  sub: NSC
+  sub: NIS
   rank: B
   TierLevel: Second
   dblp: mobihoc
