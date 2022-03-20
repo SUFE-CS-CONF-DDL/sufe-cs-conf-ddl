@@ -82,7 +82,12 @@
 
 ## 贡献
 
-当前由 [@SUFEHeisenberg](https://github.com/SUFEHeisenberg) 和 [@xiehuiping](https://github.com/xiehuiping) 创建👨🏻‍💻。 如果您对共同维护本项目感兴趣，欢迎[邮箱私信](mailto:wangziyuan@163.sufe.edu.cn)👏。
+本项目当前由 [@SUFEHeisenberg](https://github.com/SUFEHeisenberg) 在 [@HuipingXie](https://github.com/HuipingXie) 帮助下创建👨🏻‍💻。 
+
+如果您喜欢本项目，能够为[@HuipingXie](https://github.com/HuipingXie) 介绍个女朋友👧的话我们将不胜感激!
+
+如果您对共同维护本项目感兴趣，欢迎[邮箱私信](mailto:wangziyuan@163.sufe.edu.cn)👏。
+
 灵感启发来自以下优秀项目：
 - [ai-deadlines](https://aideadlin.es/) 
 - [ccfddl](https://ccfddl.github.io/)

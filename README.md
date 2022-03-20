@@ -85,7 +85,10 @@ The conference category table:
 
 
 ## Contribution
-Created by  [@SUFEHeisenberg](https://github.com/SUFEHeisenberg) and [@xiehuiping](https://github.com/xiehuiping) by now👨🏻‍💻. 
+Created by  [@SUFEHeisenberg](https://github.com/SUFEHeisenberg) with the help of [@HuipingXie](https://github.com/HuipingXie) by now👨🏻‍💻.
+
+It would be appreciated that introducing a girlfriend 👧 to [@HuipingXie](https://github.com/HuipingXie) if you like the project!
+
 If you are interesed in maintaining this project, contact me via my [email](mailto:wangziyuan@163.sufe.edu.cn)👏.
 
 Inspried by following excellent projects: 
