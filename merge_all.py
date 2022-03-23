@@ -3,6 +3,7 @@
 # @Author : heisenberg
 # @File : merge_all.py
 # @Project : sufe-cs-conf-ddl
+# @Targert : concatenate all conf yaml format files.
 
 import os
 import yaml

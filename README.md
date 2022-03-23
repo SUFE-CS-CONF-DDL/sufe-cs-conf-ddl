@@ -3,7 +3,8 @@
 English Docs | [中文文档](./README.zh-CN.md)
 
 A DDL⏳Countdown tools🔧 for a SUFE SIMEr to track down CS conference in tenure track lists,
-which can retrieve conference through CCF and TierLevel rank🎰.
+which can retrieve conference through CCF and TierLevel rank🎰. 
+We provide a double search filtering system to derive THE conference you really cares about.
 
 If you find it useful for your reseach, plz collect❤️ the [website](https://baidu.com), SHARE and STAR🌟 the project!
 

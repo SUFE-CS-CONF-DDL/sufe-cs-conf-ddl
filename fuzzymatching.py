@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+# @Time : 2022/3/8 9:00 上午
+# @Author : heisenberg
+# @File : fuzzymatching.py
+# @Project : sufe-cs-conf-ddl
+# @Target : matching CCF info with Tenure Track info from short titles, likes v-lookup opreartion.
+
+
+# 提前要安装的package
 # pip install fuzzywuzzy
 # pip install python-Levenshtein
 
