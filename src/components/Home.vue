@@ -129,7 +129,7 @@ export default {
   },
   data() {
     return {
-      publicPath: '/',
+      publicPath: './',
       checkAll: true,
       isIndeterminate: false,
       pageSize: 10,
