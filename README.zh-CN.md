@@ -1,13 +1,13 @@
 # sufe-cs-conf-ddl
 
-一款帮助上财信息人能更好地追踪院标常任轨🎰计算机会议截稿日期⏳的工具🔧。我们提供了一个双重检索系统来过滤出您真正关心的那个会议。
+一款帮助上财信息人能更好地追踪院标常任轨🎰计算机会议截稿日期⏳的工具🔧。我们提供了一个双重检索系统来过滤出您真正关心的那个会议⏰。
 
-如果您觉得对您的研究有所帮助，欢迎收藏❤️[网址](www.baidu.com)，分享并星标🌟本项目!
+如果您觉得对您的研究有所帮助，欢迎收藏❤️[网址](https://sufe-cs-conf-ddl.github.io/)，分享并星标🌟本项目!
 
 希望大家都能论文高中🎉科研成果爆表⌚️！
 ## 示例:
 
-[![示例预览](.conf_list/screenshot.png)](https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/blob/main/.conf_list/screenshot.png)
+[![示例预览](.conf_list/screenshot.png)](https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/blob/main/.conf_list/screenshot.png)
 
 ## 会议格式文件
 会议的yaml示例文件格式：
@@ -46,7 +46,7 @@
 > - `descripition`: 会议全名, i.e. International Conference on Research on Development in Information Retrieval
 > - `sub`: 会议在常任轨会议列表中的类别，与CCF分类基本类似. i.e. DBIR. 可参考下表
 > - `rank`: 会议的[CCF级别](https://www.ccf.org.cn/c/2019-04-25/663625.shtml). i.e. A
-> - `TierLevel`: 上财信管常任轨会议名单的[Tier级别](https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/blob/main/.conf_list/SIME_tenure_CCF.xlsx) i.e. Second Tier.
+> - `TierLevel`: 上财信管常任轨会议名单的[Tier级别](https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/blob/main/.conf_list/SIME_tenure_CCF.xlsx) i.e. Second Tier.
 > - `dblp`: 会议的dblp网址后缀, 通常为会议的小写缩写. i.e. https://dblp.uni-trier.de/db/conf/sigir
 > - `confs`:
     >   - `year`: 举办年份, i.e. 2022

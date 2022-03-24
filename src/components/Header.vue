@@ -10,7 +10,7 @@
         </el-row>
         <el-row class = 'subtitle'>
             Countdowns to SUFE SIME tenure track CS conference. To add/edit a conference.
-            <a style="color: #666666" href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/pulls">send a pull request.</a>
+            <a style="color: #666666" href="https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/pulls">send a pull request.</a>
         </el-row>
     </section>
 </template>

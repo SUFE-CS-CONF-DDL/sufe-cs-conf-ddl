@@ -4,14 +4,14 @@ English Docs | [中文文档](./README.zh-CN.md)
 
 A DDL⏳Countdown tools🔧 for a SUFE SIMEr to track down CS conference in tenure track lists,
 which can retrieve conference through CCF and TierLevel rank🎰. 
-We provide a double search filtering system to derive THE conference you really cares about.
+We provide a double search filtering system to derive THE conference you really cares about⏰.
 
-If you find it useful for your reseach, plz collect❤️ the [website](https://baidu.com), SHARE and STAR🌟 the project!
+If you find it useful for your reseach, plz collect❤️ the [website](https://sufe-cs-conf-ddl.github.io/), SHARE and STAR🌟 the project!
 
 Sincerely hope everyone can publish the paper successfully🎉and derive significant research results!🍾
 ## Demo:
 
-[![Demo Preview](.conf_list/screenshot.png)](https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/blob/main/.conf_list/screenshot.png)
+[![Demo Preview](.conf_list/screenshot.png)](https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/blob/main/.conf_list/screenshot.png)
 
 
 ## Conference schema file
@@ -52,7 +52,7 @@ Descriptions of all above scipts items.
 > - `descripition`: Full name of conference, i.e. International Conference on Research on Development in Information Retrieval
 > - `sub`: The conference category defines in tenure track lists, which is nearly similiar to CCF lists. i.e. DBIR. The detailed information can be found below.
 > - `rank`: [CCF level](https://www.ccf.org.cn/c/2019-04-25/663625.shtml) of the conferece. i.e. A
-> - `TierLevel`: [Tier Level](https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/blob/main/.conf_list/SIME_tenure_CCF.xlsx) in SUFE SIME of the conference i.e. Second Tier.
+> - `TierLevel`: [Tier Level](https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/blob/main/.conf_list/SIME_tenure_CCF.xlsx) in SUFE SIME of the conference i.e. Second Tier.
 > - `dblp`: Suffix in dblp url, usually the lower-case of conf's short name. i.e. https://dblp.uni-trier.de/db/conf/sigir
 > - `confs`:
 >   - `year`: The holding year, i.e. 2022

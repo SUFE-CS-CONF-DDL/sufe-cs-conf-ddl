@@ -94,7 +94,7 @@
     <el-row style="padding-top: 8px">
       <div style="float: left; color: #666666;font-size: 13px;">
         <div>sufe-cs-conf-ddl project is created and maintained by <a style="font-weight: bold;" href="https://github.com/SUFEHeisenberg">@SUFEHeisenberg</a> with the help of <a style="font-weight: bold;" href="https://github.com/HuipingXie">@HuipingXie</a>.</div>
-        <div style="padding-top: 3px">If you find it useful, please collect this website, <a style="font-weight: bold; font-size: 16px;" href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl">SHARE and STAR</a> the project!</div>
+        <div style="padding-top: 3px">If you find it useful, please collect this website, <a style="font-weight: bold; font-size: 16px;" href="https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl">SHARE and STAR</a> the project!</div>
         <div style="padding-top: 3px">If you wanna join us to maintain this project together, please <a style="font-weight: bold" href="mailto:wangziyuan@163.sufe.edu.cn">EMAIL me</a>!</div>
       </div>
       <div style="float: right">
