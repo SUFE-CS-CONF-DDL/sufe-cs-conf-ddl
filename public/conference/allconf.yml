@@ -873,7 +873,7 @@
     link: https://neurips.cc/Conferences/2022
     timeline:
     - abstract_deadline: '2022-05-16 13:00:00'
-      deadline: '2021-05-19 13:00:00'
+      deadline: '2022-05-19 13:00:00'
     timezone: UTC-7
     date: November 28-December 9, 2022
     place: New Orleans, U.S.
@@ -911,6 +911,22 @@
     timezone: UTC+0
     date: September 6-9, 2022
     place: Bristol, United Kingdom
+- title: NeurIPS Datasets and Benchmarks Track
+  description: Conference on Neural Information Processing Systems
+  sub: AI
+  rank: A
+  dblp: nips
+  TierLevel: First
+  confs:
+  - year: 2022
+    id: nipsdbtrack22
+    link: https://nips.cc/Conferences/2022/CallForDatasetsBenchmarks
+    timeline:
+    - abstract_deadline: '2022-06-06 13:00:00'
+      deadline: '2022-06-09 13:00:00'
+    timezone: UTC-7
+    date: November 28-December 9, 2022
+    place: New Orleans, U.S.
 - title: COLT
   description: Annual Conference on Learning Theory
   sub: AI

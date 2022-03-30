@@ -9,7 +9,7 @@ import os
 import yaml
 
 HOME_DIR = os.path.dirname(os.path.realpath('__file__'))
-all_conf_path = os.path.join(HOME_DIR,'conference')
+all_conf_path = os.path.join(HOME_DIR,'public/conference')
 all_conf_type = ['PDC','CGM','TC','AI','SE','DBIR','NIS']
 
 i=0
@@ -22,7 +22,7 @@ for conf_type in all_conf_type:
         c = f.read()
         x = yaml.full_load(c)
         i+=1
-        with open('conference/allconf.yml','a',encoding='utf-8') as f:
+        with open('public/conference/allconf.yml','a',encoding='utf-8') as f:
             f.write(yaml.dump(x,allow_unicode=True, default_flow_style=False,sort_keys=False))
 print('Sum %s confs in SUFE CS tenure conf'%i)
 # Sum 108 confs in SUFE CS tenure conf
