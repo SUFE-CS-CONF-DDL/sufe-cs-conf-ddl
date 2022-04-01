@@ -10,6 +10,7 @@ module.exports = {
   runtimeCompiler: true,
 };
 
+// Annotation
 // const { defineConfig } = require('@vue/cli-service')
 // module.exports = defineConfig({
 //   transpileDependencies: true,
