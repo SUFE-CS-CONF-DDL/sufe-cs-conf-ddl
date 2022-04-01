@@ -9,7 +9,7 @@ import os
 import yaml
 
 HOME_DIR = os.path.dirname(os.path.realpath('__file__'))
-all_conf_path = os.path.join(HOME_DIR,'public/conference')
+all_conf_path = os.path.join(HOME_DIR,'public/conference') #update public path
 all_conf_type = ['PDC','CGM','TC','AI','SE','DBIR','NIS']
 
 i=0
