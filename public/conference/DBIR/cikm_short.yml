@@ -1,0 +1,16 @@
+- title: CIKM Short Papers
+  description: ACM International Conference on Information and Knowledge Management
+  sub: DBIR
+  rank: B
+  TierLevel: Second
+  dblp: cikm
+  confs:
+    - year: 2022
+      id: cikm22short
+      link: https://www.cikm2022.org/calls/call-for-short-papers
+      timeline:
+        - abstract_deadline: '2022-05-26 23:59:59'
+          deadline: '2022-06-02 23:59:59'
+      timezone: AoE
+      date: October 17-22, 2022
+      place: Atlanta, Georgia, USA

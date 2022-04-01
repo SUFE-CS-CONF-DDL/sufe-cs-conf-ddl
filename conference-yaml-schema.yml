@@ -28,7 +28,7 @@ items:
         - AI
         - SE
         - DBIR
-        - NSC
+        - NIS
     rank:
       description: The level that the conference is ranked by CCF, e.g., A, B, C
       type: string

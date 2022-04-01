@@ -1292,6 +1292,22 @@
     timezone: UTC-8
     date: June 18-23,2023
     place: Seattle,WA,USA
+- title: CIKM Short Papers
+  description: ACM International Conference on Information and Knowledge Management
+  sub: DBIR
+  rank: B
+  TierLevel: Second
+  dblp: cikm
+  confs:
+  - year: 2022
+    id: cikm22short
+    link: https://www.cikm2022.org/calls/call-for-short-papers
+    timeline:
+    - abstract_deadline: '2022-05-26 23:59:59'
+      deadline: '2022-06-02 23:59:59'
+    timezone: AoE
+    date: October 17-22, 2022
+    place: Atlanta, Georgia, USA
 - title: SIGIR
   description: International Conference on Research on Development in Information
     Retrieval
@@ -1593,7 +1609,7 @@
     timezone: UTC-8
     date: June 18-23, 2022
     place: Seattle, WA, USA
-- title: CIKM
+- title: CIKM Full Papers
   description: ACM International Conference on Information and Knowledge Management
   sub: DBIR
   rank: B
@@ -1618,10 +1634,10 @@
     place: Queensland, Australia
   - year: 2022
     id: cikm22
-    link: https://www.cikm2022.org/
+    link: https://www.cikm2022.org/calls/call-for-full-papers
     timeline:
     - abstract_deadline: '2022-05-09 23:59:59'
-      deadline: '2021-05-16 23:59:59'
+      deadline: '2022-05-16 23:59:59'
     timezone: AoE
     date: October 17-22, 2022
     place: Atlanta, Georgia, USA
