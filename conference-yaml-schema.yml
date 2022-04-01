@@ -19,7 +19,7 @@ items:
       description: Description, or long name, with no session
       type: string
     sub:
-      description: The category that the conference is labeled by CCF.
+      description: The category that the conference is labeled by SUFE SIME CS Conference Tenure Track.
       type: string
       enum:
         - PDC
