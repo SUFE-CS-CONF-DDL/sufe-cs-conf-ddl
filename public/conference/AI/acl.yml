@@ -5,14 +5,14 @@
   TierLevel: Second
   dblp: acl
   confs:
-    - year: 2022
-      id: acl22
-      link: https://www.2022.aclweb.org/
+    - year: 2023
+      id: acl23
+      link: https://www.2023.aclweb.org/
       timeline:
-        - deadline: '2021-09-15 23:59:59'
-        - deadline: '2021-10-15 23:59:59'
-        - deadline: '2021-11-15 23:59:59'
+        - deadline: '2022-09-15 23:59:59'
+        - deadline: '2022-10-15 23:59:59'
+        - deadline: '2022-11-15 23:59:59'
           comment: 'final submission deadline'
       timezone: UTC-12
-      date: May 22-27, 2022
-      place: Dublin, Ireland
+      date: Sometime
+      place: Somewhere
