@@ -751,6 +751,17 @@
     timezone: AoE
     date: November 7-11, 2021
     place: Barceló Bávaro Convention Centre, Punta Cana, Dominican Republic
+  - year: 2022
+    id: emnlp22
+    link: https://2022.emnlp.org/
+    timeline:
+    - abstract_deadline: '2022-06-17 23:59:00'
+      deadline: '2022-06-24 23:59:00'
+    - deadline: '2022-06-24 23:59:00'
+      comment: submission ddl for ARR papers
+    timezone: AoE
+    date: December 7–11, 2022
+    place: Abu Dhabi
 - title: ECAI
   description: European Conference on Artificial Intelligence
   sub: AI
@@ -1544,7 +1555,7 @@
   sub: DBIR
   rank: B
   TierLevel: Third
-  dblp: sigir
+  dblp: sdm
   confs:
   - year: 2022
     id: sdm22
