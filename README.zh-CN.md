@@ -78,6 +78,16 @@
 > - 网络与信息安全
     >   sub: NIS
 
+## 添加新的会议方向和更新截止日
+我们非常欢迎并十分感激您能在本项目组中提出贡献。🤟
+
+添加新的会议方向和更新截止日的步骤
+- Fork这个项目仓库.
+- 通过提交会议的`yaml`文件来添加新的会议方向和更新截止日
+- 提交[Pull Request](https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/pulls).
+
+👨‍🏫 如果您对P&R操作不熟悉的话可以参考[本网址](https://chinese.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/) 。
+
 
 
 ## 贡献

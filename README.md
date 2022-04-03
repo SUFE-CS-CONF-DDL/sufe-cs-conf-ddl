@@ -85,6 +85,17 @@ The conference category table:
     >   sub: NIS
 
 
+## Add New Conference Tracks and Update DDL
+We would welcome and be appreciated a lot if you can propose contributions.🤟
+
+Steps to add new conference tracks and update ddl:
+- Fork this repo.
+- Add new conf tracks or update DDL via commit new conf yaml file
+- Send A [Pull Request](https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/pulls).
+
+👨‍🏫 Refer to [this page](https://chinese.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/) 
+ you're not familiar with commit pull&request. 
+
 ## Contribution
 Created by  [@SUFEHeisenberg](https://github.com/SUFEHeisenberg) with the help of [@HuipingXie](https://github.com/HuipingXie) by now👨🏻‍💻.
 
