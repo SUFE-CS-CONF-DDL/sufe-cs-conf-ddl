@@ -20,6 +20,7 @@
       timeline:
         - abstract_deadline: '2022-06-17 23:59:00'
           deadline: '2022-06-24 23:59:00'
+          comment: long&short same DDL.
         - deadline: '2022-06-24 23:59:00'
           comment: submission ddl for ARR papers.
       timezone: AoE
