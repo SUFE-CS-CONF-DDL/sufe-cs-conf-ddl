@@ -78,7 +78,7 @@
             </el-row>
             <el-row>
               <div v-if="scope.row.status === 'TBD'">
-                Deadline: <a href="https://github.com/SUFEHeisenberg/sufe-cs-conf-ddl/pulls">pull request to update</a>
+                Deadline: <a href="https://github.com/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/pulls">pull request to update</a>
               </div>
               <div v-else>
                 Deadline: {{scope.row.localDDL}} ({{scope.row.originDDL}})

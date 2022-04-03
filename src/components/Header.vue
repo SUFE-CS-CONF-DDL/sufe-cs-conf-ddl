@@ -23,14 +23,13 @@ export default {
   components: { GithubButton },
   data() {
     return {
-      showLatestConf: false,
+      showLatestConf: true,
       showStr: '',
     };
   },
   mounted() {
-    this.$help.get('https://api.github.com/repos/SUFEHeisenberg/sufe-cs-conf-ddl/commits?page=1&per_page=10').then((response) => {
+    this.$http.get('https://api.github.com/repos/SUFE-CS-CONF-DDL/sufe-cs-conf-ddl/commits?page=1&per_page=10').then((response) => {
       const len = response.body.length;
-
       for (let i = 0; i < len; i += 1) {
         let str = response.body[i].commit.message;
         const strArr = str.split(' ');
