@@ -4,6 +4,8 @@
 
 如果您觉得对您的研究有所帮助，欢迎收藏❤️[网址](https://sufe-cs-conf-ddl.github.io/)，分享并星标🌟本项目!
 
+请参考[本网址](https://github.com/lixin4ever/Conference-Acceptance-Rate) 查询不同会议接受率 。
+
 希望大家都能论文高中🎉科研成果爆表⌚️！
 ## 示例:
 

@@ -8,6 +8,8 @@ We provide a double search filtering system to derive THE conference you really 
 
 If you find it useful for your reseach, plz collect❤️ the [website](https://sufe-cs-conf-ddl.github.io/), SHARE and STAR🌟 the project!
 
+Refer to this [site](https://github.com/lixin4ever/Conference-Acceptance-Rate) to know about the conference acceptance ratio in different confs.
+
 Sincerely hope everyone can publish the paper successfully🎉and derive significant research results!🍾
 ## Demo:
 
