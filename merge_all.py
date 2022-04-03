@@ -12,6 +12,9 @@ HOME_DIR = os.path.dirname(os.path.realpath('__file__'))
 all_conf_path = os.path.join(HOME_DIR,'public/conference') #update public path
 all_conf_type = ['PDC','CGM','TC','AI','SE','DBIR','NIS']
 
+# delete the original allconf file.
+os.system('rm '+os.path.join(all_conf_path,'allconf.yml'))
+
 i=0
 for conf_type in all_conf_type:
     pdc_path = os.path.join(all_conf_path, conf_type)
