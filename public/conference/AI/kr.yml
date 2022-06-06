@@ -9,7 +9,7 @@
       id: kr2022
       link: https://kr2022.cs.tu-dortmund.de/
       timeline:
-        - deadline: '2021-02-02 23:59:59'
+        - deadline: '2022-02-02 23:59:59'
           comments: 'title and abstract'
         - deadline: '2022-02-11 23:59:59'
           comments: 'full paper'

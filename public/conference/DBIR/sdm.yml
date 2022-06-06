@@ -9,7 +9,15 @@
       id: sdm22
       link: https://www.siam.org/conferences/cm/conference/sdm22
       timeline:
-        - deadline: '2022-10-12 23:59:00'
+        - deadline: '2021-10-12 23:59:00'
       timezone: UTC-8
       date: April 28-30, 2022
       place: Alexandria, Virginia, U.S.
+    - year: 2023
+      id: sdm23
+      link: https://www.siam.org/conferences/cm/conference/sdm23
+      timeline:
+        - deadline: TBD
+      timezone: UTC-8
+      date: April 27-29, 2023
+      place: Minneapolis, Minnesota, U.S.

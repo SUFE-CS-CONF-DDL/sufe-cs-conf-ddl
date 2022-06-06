@@ -28,6 +28,6 @@ for conf_type in all_conf_type:
         with open('public/conference/allconf.yml','a',encoding='utf-8') as f:
             f.write(yaml.dump(x,allow_unicode=True, default_flow_style=False,sort_keys=False))
 print('Sum %s confs in SUFE CS tenure conf'%i)
-# Sum 108 confs in SUFE CS tenure conf
+# Sum 110 confs in SUFE CS tenure conf
 
 
