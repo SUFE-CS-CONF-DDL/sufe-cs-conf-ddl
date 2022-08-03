@@ -3,7 +3,7 @@
   sub: DBIR
   rank: B
   TierLevel: Third
-  dblp: sigir
+  dblp: sdm
   confs:
     - year: 2022
       id: sdm22

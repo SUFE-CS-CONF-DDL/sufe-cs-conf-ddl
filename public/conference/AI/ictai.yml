@@ -10,6 +10,14 @@
       link: https://ictai.computer.org/
       timeline:
         - deadline: '2021-06-20 23:59:00'
-      timezone: UTC-7
+      timezone: AoE
       date: November 01-03, 2021
+      place: Washington DC, USA
+    - year: 2022
+      id: ictai22
+      link: https://ictai.computer.org/2022/
+      timeline:
+        - deadline: '2022-08-08 23:59:59'
+      timezone: AoE
+      date: October 31 - November 02, 2022
       place: Washington DC, USA

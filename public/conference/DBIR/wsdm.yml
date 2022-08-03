@@ -7,7 +7,7 @@
   confs:
     - year: 2022
       id: wsdm22
-      link: https://https://www.wsdm-conference.org/2022/
+      link: https://www.wsdm-conference.org/2022/
       timeline:
         - deadline: '2021-08-13 23:59:59'
       timezone: AoE
@@ -15,7 +15,7 @@
       place: Phoenix, Arizona, USA
     - year: 2023
       id: wsdm23
-      link: https://https://www.wsdm-conference.org/2022/
+      link: https://www.wsdm-conference.org/2023/
       timeline:
         - deadline: '2022-08-12 23:59:59'
       timezone: AoE

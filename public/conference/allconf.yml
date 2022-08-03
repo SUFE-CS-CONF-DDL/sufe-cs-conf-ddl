@@ -814,8 +814,16 @@
     link: https://ictai.computer.org/
     timeline:
     - deadline: '2021-06-20 23:59:00'
-    timezone: UTC-7
+    timezone: AoE
     date: November 01-03, 2021
+    place: Washington DC, USA
+  - year: 2022
+    id: ictai22
+    link: https://ictai.computer.org/2022/
+    timeline:
+    - deadline: '2022-08-08 23:59:59'
+    timezone: AoE
+    date: October 31 - November 02, 2022
     place: Washington DC, USA
 - title: CoNLL
   description: Conference on Natural Language Learning
@@ -1450,7 +1458,7 @@
   confs:
   - year: 2022
     id: wsdm22
-    link: https://https://www.wsdm-conference.org/2022/
+    link: https://www.wsdm-conference.org/2022/
     timeline:
     - deadline: '2021-08-13 23:59:59'
     timezone: AoE
@@ -1458,7 +1466,7 @@
     place: Phoenix, Arizona, USA
   - year: 2023
     id: wsdm23
-    link: https://https://www.wsdm-conference.org/2022/
+    link: https://www.wsdm-conference.org/2023/
     timeline:
     - deadline: '2022-08-12 23:59:59'
     timezone: AoE
@@ -1592,7 +1600,7 @@
   sub: DBIR
   rank: B
   TierLevel: Third
-  dblp: sigir
+  dblp: sdm
   confs:
   - year: 2022
     id: sdm22
