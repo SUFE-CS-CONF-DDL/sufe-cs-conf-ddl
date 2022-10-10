@@ -16,3 +16,14 @@
       timezone: AoE
       date: May 30-June 3, 2022
       place: Nagasaki, Japan
+    - year: 2023
+      id: asiaccs23
+      link: https://asiaccs2023.org/
+      timeline:
+        - deadline: '2022-09-01 23:59:59'
+          comment: '1st round Deadline'
+        - deadline: '2022-12-15 23:59:59'
+          comment: '2nd round Deadline'
+      timezone: AoE
+      date: 10-14th July, 2023
+      place: Melbourne, Australia

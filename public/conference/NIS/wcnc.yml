@@ -13,3 +13,14 @@
       timezone: AoE
       date: April 10–13, 2022
       place: Austin, TX, USA
+    - year: 2023
+      id: wcnc23
+      link: https://wcnc2023.ieee-wcnc.org/
+      timeline:
+        - deadline: '2022-10-10 23:59:59'
+          comment: 'Paper Submission'
+        - deadline: '2022-12-01 23:59:59'
+          comment: 'Notification'
+      timezone: AoE
+      date: 26–29 March, 2023
+      place: Glasgow, Scotland, UK

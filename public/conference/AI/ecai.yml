@@ -14,3 +14,12 @@
       timezone: AoE
       date: July 23-29, 2022
       place: Messe Wien, Vienna, Austria
+    - year: 2023
+      id: ecai23
+      link: https://ecai2023.eu/
+      timeline:
+        - abstract_deadline: 'TBD'
+          deadline: 'TBD'
+      timezone: AoE
+      date: 1-6 October, 2023
+      place: Kraków, Poland
