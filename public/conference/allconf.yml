@@ -875,12 +875,13 @@
     place: Vienna, Austria.
   - year: 2023
     id: ijcai23
-    link: https://ijcai-23.org/
+    link: https://ijcai-23.org
     timeline:
-    - deadline: TBD
-    timezone: AoE
-    date: 19th-25th August, 2023
-    place: Cape Town, South Africa
+    - abstract_deadline: '2023-01-11 23:59:59'
+      deadline: '2023-01-18 23:59:59'
+    timezone: UTC-12
+    date: August 19-25, 2023
+    place: Cape Town, South Africa.
 - title: AAAI
   description: AAAI Conference on Artificial Intelligence
   sub: AI
@@ -1314,6 +1315,17 @@
     timezone: AoE
     date: November 14-19, 2022
     place: Auckland, New Zealand
+  - year: 2023
+    id: oopsla22
+    link: https://2022.splashcon.org/track/splash-2022-oopsla
+    timeline:
+    - deadline: '2022-10-28 23:59:59'
+      comment: Submission Deadline Round 1
+    - deadline: '2023-04-14 23:59:59'
+      comment: Submission Deadline Round 2
+    timezone: AoE
+    date: November 14-19, 2022
+    place: Auckland, New Zealand
 - title: DASFAA
   description: Database Systems for Advanced Applications
   sub: DBIR
@@ -1430,6 +1442,15 @@
     timezone: AoE
     date: July 11-15, 2022
     place: Madrid
+  - year: 2023
+    id: sigir23
+    link: https://sigir.org/sigir2023/
+    timeline:
+    - abstract_deadline: '2023-01-24 23:59:59'
+      deadline: '2023-01-31 23:59:59'
+    timezone: AoE
+    date: July 23-27, 2023
+    place: Taipei, Taiwan
 - title: VLDB
   description: International Conference on Very Large Data Bases
   sub: DBIR
