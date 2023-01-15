@@ -14,3 +14,12 @@
       timezone: UTC+0
       date: September 6-9, 2022
       place: Bristol, United Kingdom
+    - year: 2023
+      id: icann23
+      link: https://e-nns.org/icann2023/
+      timeline:
+        - deadline: '2022-04-09 23:59:00'
+          comment: 'full paper and extended abstract submission'
+      timezone: UTC+0
+      date: 26 – 29 September 2023
+      place: Heraklion city, Crete

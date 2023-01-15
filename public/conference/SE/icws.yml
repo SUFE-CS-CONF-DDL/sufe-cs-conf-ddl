@@ -14,3 +14,12 @@
       timezone: AoE
       date: JULY 10-16, 2022
       place: Barcelona, Spain
+    - year: 2023
+      id: icws23
+      link: https://conferences.computer.org/icws/2023/
+      timeline:
+        - deadline: '2023-02-12 23:59:59'
+          comment: 'Submission deadline'
+      timezone: AoE
+      date: July 2-8, 2023
+      place: CHICAGO, ILLINOIS US
