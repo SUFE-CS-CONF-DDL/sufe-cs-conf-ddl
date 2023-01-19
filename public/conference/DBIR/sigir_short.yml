@@ -1,0 +1,16 @@
+- title: SIGIR Short Paper
+  description: International Conference on Research on Development in Information Retrieval
+  sub: DBIR
+  rank: A
+  TierLevel: Second
+  dblp: sigir
+  confs:
+    - year: 2023
+      id: sigirshort23
+      link: https://sigir.org/sigir2023/submit/call-for-short-papers/
+      timeline:
+        - abstract_deadline: '2023-02-14 23:59:59'
+          deadline: '2023-02-21 23:59:59'
+      timezone: AoE
+      date: July 23-27, 2023
+      place: Taipei, Taiwan
