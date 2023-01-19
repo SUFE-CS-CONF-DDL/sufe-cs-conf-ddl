@@ -7,7 +7,7 @@
   confs:
     - year: 2023
       id: sigirshort23
-      link: https://sigir.org/sigir2023/submit/call-for-short-papers/
+      link: https://sigir.org/sigir2023/submit/call-for-short-papers
       timeline:
         - abstract_deadline: '2023-02-14 23:59:59'
           deadline: '2023-02-21 23:59:59'

@@ -21,3 +21,11 @@
       timezone: AoE
       date: August 1-5, 2022
       place: Eindhoven,Netherlands
+    - year: 2023
+      id: uai23
+      link: http://auai.org/uai2023/
+      timeline:
+        - deadline: '2023-02-17 23:59:00'
+      timezone: AoE
+      date: ugust 1st - August 3rd, 2023
+      place: Carnegie Mellon University, Pittsburgh, PA, USA

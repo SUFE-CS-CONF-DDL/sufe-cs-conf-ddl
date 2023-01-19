@@ -829,6 +829,14 @@
     timezone: AoE
     date: August 1-5, 2022
     place: Eindhoven,Netherlands
+  - year: 2023
+    id: uai23
+    link: http://auai.org/uai2023/
+    timeline:
+    - deadline: '2023-02-17 23:59:00'
+    timezone: AoE
+    date: ugust 1st - August 3rd, 2023
+    place: Carnegie Mellon University, Pittsburgh, PA, USA
 - title: ICTAI
   description: International Conference on Tools with Artificial Intellignce
   sub: AI
@@ -1869,7 +1877,7 @@
   confs:
   - year: 2023
     id: sigirshort23
-    link: https://sigir.org/sigir2023/submit/call-for-short-papers/
+    link: https://sigir.org/sigir2023/submit/call-for-short-papers
     timeline:
     - abstract_deadline: '2023-02-14 23:59:59'
       deadline: '2023-02-21 23:59:59'
