@@ -18,8 +18,8 @@
       id: ecai23
       link: https://ecai2023.eu/
       timeline:
-        - abstract_deadline: 'TBD'
-          deadline: 'TBD'
+        - abstract_deadline: '2023-05-02 23:59:59'
+          deadline: '2023-05-8 23:59:59'
       timezone: AoE
       date: 1-6 October, 2023
       place: Kraków, Poland
