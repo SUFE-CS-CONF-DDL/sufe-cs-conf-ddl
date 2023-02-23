@@ -62,6 +62,15 @@
     timezone: AoE
     date: October 10-12, 2022
     place: Copenhagen, Denmark
+  - year: 2023
+    id: ica3pp
+    link: http://tjutanklab.com/ica3pp2023/
+    timeline:
+    - deadline: '2023-05-30 23:59:00'
+      comment: Paper Submission Due
+    timezone: UTC-8
+    date: October 20-22, 2022
+    place: Tianjin, China
 - title: PACT
   description: Parallel Architectures and Compilation Techniques
   sub: PDC
@@ -158,6 +167,14 @@
     timezone: AoE
     date: November 13–18, 2022
     place: Dallas, American
+  - year: 2023
+    id: sc23
+    link: https://sc23.supercomputing.org/
+    timeline:
+    - deadline: '2023-04-06 23:59:00'
+    timezone: AoE
+    date: November 12-17, 2023
+    place: DENVER, CO, USA
 - title: ISPA
   description: IEEE International Symposium on Parallel and Distributed Processing
     with Applications
@@ -1653,13 +1670,13 @@
     place: Grenoble, France.
   - year: 2023
     id: ecmlpkdd23
-    link: https://2023.ecmlpkdd.org/
+    link: https://2023.ecmlpkdd.org/submissions/key-dates-deadlines/
     timeline:
-    - abstract_deadline: TBD
-      deadline: TBD
+    - abstract_deadline: '2023-03-26 23:59:59'
+      deadline: '2023-04-02 23:59:59'
     timezone: AoE
     date: September 18-22, 2023
-    place: Grenoble, France.
+    place: Turin, Italy
 - title: ICDE
   description: IEEE International Conference on Data Engineering
   sub: DBIR
