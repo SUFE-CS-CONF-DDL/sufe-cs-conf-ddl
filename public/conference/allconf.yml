@@ -87,6 +87,17 @@
     timezone: AoE
     date: October 10–12, 2022
     place: Chicago, American
+  - year: 2023
+    id: pact23
+    link: https://pact2023.github.io/
+    timeline:
+    - deadline: '2023-03-25 23:59:59'
+      comment: Abstract submission deadline
+    - deadline: '2023-04-01 23:59:59'
+      comment: Paper submission deadline
+    timezone: AoE
+    date: October 21-October 25, 2023
+    place: Vienna, Austria
 - title: ICPADS
   description: International Conference on Parallel and Distributed Systems
   sub: PDC
@@ -318,6 +329,15 @@
     timezone: UTC+0
     date: October 18–21, 2021
     place: Wellington, New Zealand
+  - year: 2023
+    id: pg23
+    link: https://pg2023.org/
+    timeline:
+    - abstract_deadline: '2023-06-01 23:59:59'
+      deadline: '2023-06-06 23:59:59'
+    timezone: AoE
+    date: October 10-13, 2023
+    place: Daejeon, South Korea
 - title: EuroVis
   description: Eurographics Conference on Visualization
   sub: CGM
@@ -428,6 +448,14 @@
     timezone: AoE
     date: October 17-21, 2022
     place: Singapore
+  - year: 2023
+    id: ismar2023
+    link: https://ismar23.org/
+    timeline:
+    - deadline: TBD
+    timezone: AoE
+    date: Oct 16-20, 2023
+    place: Sydney, Australia
 - title: IEEE VIS
   description: IEEE Visualization Conference
   sub: CGM
@@ -1188,7 +1216,7 @@
     id: icws23
     link: https://conferences.computer.org/icws/2023/
     timeline:
-    - deadline: '2023-02-12 23:59:59'
+    - deadline: '2023-03-25 23:59:59'
       comment: Submission deadline
     timezone: AoE
     date: July 2-8, 2023
@@ -1385,6 +1413,15 @@
     timezone: AoE
     date: October 16-21, 2022
     place: Montréal, Canada
+  - year: 2023
+    id: models23
+    link: https://conf.researchr.org/home/models-2023
+    timeline:
+    - abstract_deadline: '2023-06-26 23:59:59'
+      deadline: '2023-07-05 23:59:59'
+    timezone: AoE
+    date: October 1-6, 2023
+    place: Västerås, Sweden
 - title: icfeme
   description: International Conference on Formal Engineering Methods
   sub: SE
@@ -1625,6 +1662,25 @@
     timezone: UTC-7
     date: August 28 to September 1, 2023
     place: Vancouver, Canada
+  - year: 2024
+    id: vldb24
+    link: http://www.vldb.org/2024/
+    timeline:
+    - deadline: '2023-04-01 17:00:00'
+    - deadline: '2023-05-01 17:00:00'
+    - deadline: '2023-06-01 17:00:00'
+    - deadline: '2023-07-01 17:00:00'
+    - deadline: '2023-08-01 17:00:00'
+    - deadline: '2023-09-01 17:00:00'
+    - deadline: '2023-10-01 17:00:00'
+    - deadline: '2023-11-01 17:00:00'
+    - deadline: '2023-12-01 17:00:00'
+    - deadline: '2024-01-01 17:00:00'
+    - deadline: '2024-02-01 17:00:00'
+    - deadline: '2024-03-01 17:00:00'
+    timezone: UTC-7
+    date: August 25-29, 2024
+    place: Guangzhou, China (and hybrid)
 - title: ICDT
   description: International Conference on Database Theory
   sub: DBIR
@@ -1858,6 +1914,14 @@
     timezone: UTC-7
     date: November 30-December 3, 2022
     place: Orlando,FL,USA
+  - year: 2023
+    id: icdm23
+    link: http://cloud-conf.net/icdm2023/index.html
+    timeline:
+    - deadline: '2023-07-01 23:59:59'
+    timezone: UTC+8
+    date: December 1-4, 2023
+    place: Shanghai, China
 - title: SIGMOD
   description: ACM Conference on Management of Data
   sub: DBIR
@@ -1898,6 +1962,21 @@
     timezone: UTC-8
     date: June 18-23, 2022
     place: Seattle, WA, USA
+  - year: 2024
+    id: sigmod24
+    link: http://2024.sigmod.org/
+    timeline:
+    - deadline: '2023-01-15 23:59:00'
+      comment: round 1
+    - deadline: '2023-04-15 23:59:00'
+      comment: round 2
+    - deadline: '2023-07-15 23:59:00'
+      comment: round 3
+    - deadline: '2023-10-15 23:59:00'
+      comment: round 4
+    timezone: UTC-7
+    date: June 11-16, 2024
+    place: Santiago, Chile
 - title: CIKM Full Papers
   description: ACM International Conference on Information and Knowledge Management
   sub: DBIR
@@ -2070,6 +2149,14 @@
     timezone: AoE
     date: September 5-8, 2021
     place: Canterbury, Kent, UK
+  - year: 2023
+    id: icics23
+    link: https://icics23.nankai.edu.cn/
+    timeline:
+    - deadline: '2023-03-30 23:59:59'
+    timezone: AoE
+    date: November 18-20, 2023
+    place: Nankai University, Tianjin, China
 - title: ICCCN
   description: IEEE International Conference on Computer Communications and Networks
   sub: NIS
@@ -2197,6 +2284,15 @@
     timezone: UTC-7
     date: Oct 2022
     place: Sydney, Australia
+  - year: 2023
+    id: mobicom23
+    link: https://www.sigmobile.org/mobicom/2023/
+    timeline:
+    - abstract_deadline: '2023-03-10 23:59:59'
+      deadline: '2023-03-17 23:59:59'
+    timezone: UTC-7
+    date: Oct 2-6, 2023
+    place: Madrid, Spain
 - title: TrustCom
   description: IEEE International Conference on Trust, Security and Privacy in Computing
     and Communications

@@ -14,3 +14,11 @@
       timezone: AoE
       date: October 17-21, 2022
       place: Singapore
+    - year: 2023
+      id: ismar2023
+      link: https://ismar23.org/
+      timeline:
+        - deadline: 'TBD'
+      timezone: AoE
+      date: Oct 16-20, 2023
+      place: Sydney, Australia

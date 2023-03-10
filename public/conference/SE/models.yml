@@ -14,3 +14,12 @@
       timezone: AoE
       date: October 16-21, 2022
       place: Montréal, Canada
+    - year: 2023
+      id: models23
+      link: https://conf.researchr.org/home/models-2023
+      timeline:
+        - abstract_deadline: '2023-06-26 23:59:59'
+          deadline: '2023-07-05 23:59:59'
+      timezone: AoE
+      date: October 1-6, 2023
+      place: Västerås, Sweden
