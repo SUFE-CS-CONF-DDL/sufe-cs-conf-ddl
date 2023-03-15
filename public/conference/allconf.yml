@@ -71,33 +71,6 @@
     timezone: UTC-8
     date: October 20-22, 2022
     place: Tianjin, China
-- title: PACT
-  description: Parallel Architectures and Compilation Techniques
-  sub: PDC
-  rank: B
-  TierLevel: Second
-  dblp: pact
-  confs:
-  - year: 2022
-    id: pact22
-    link: https://pact22.cs.illinois.edu/
-    timeline:
-    - abstract_deadline: '2022-04-18 23:59:59'
-      deadline: '2022-04-25 23:59:59'
-    timezone: AoE
-    date: October 10–12, 2022
-    place: Chicago, American
-  - year: 2023
-    id: pact23
-    link: https://pact2023.github.io/
-    timeline:
-    - deadline: '2023-03-25 23:59:59'
-      comment: Abstract submission deadline
-    - deadline: '2023-04-01 23:59:59'
-      comment: Paper submission deadline
-    timezone: AoE
-    date: October 21-October 25, 2023
-    place: Vienna, Austria
 - title: ICPADS
   description: International Conference on Parallel and Distributed Systems
   sub: PDC
@@ -186,6 +159,33 @@
     timezone: AoE
     date: November 12-17, 2023
     place: DENVER, CO, USA
+- title: PACT
+  description: Parallel Architectures and Compilation Techniques
+  sub: PDC
+  rank: B
+  TierLevel: Second
+  dblp: pact
+  confs:
+  - year: 2022
+    id: pact22
+    link: https://pact22.cs.illinois.edu/
+    timeline:
+    - abstract_deadline: '2022-04-18 23:59:59'
+      deadline: '2022-04-25 23:59:59'
+    timezone: AoE
+    date: October 10–12, 2022
+    place: Chicago, American
+  - year: 2023
+    id: pact23
+    link: https://pact2023.github.io/
+    timeline:
+    - deadline: '2023-03-25 23:59:59'
+      comment: Abstract submission deadline
+    - deadline: '2023-04-01 23:59:59'
+      comment: Paper submission deadline
+    timezone: AoE
+    date: October 21-October 25, 2023
+    place: Vienna, Austria
 - title: ISPA
   description: IEEE International Symposium on Parallel and Distributed Processing
     with Applications
@@ -1563,6 +1563,15 @@
     timezone: AoE
     date: October 17-22, 2022
     place: Atlanta, Georgia, USA
+  - year: 2023
+    id: cikm23short
+    link: https://cikm2023.github.io/
+    timeline:
+    - abstract_deadline: '2023-06-09 23:59:59'
+      deadline: '2023-06-16 23:59:59'
+    timezone: AoE
+    date: October 21-25, 2023
+    place: Birmingham, UK
 - title: SIGIR
   description: International Conference on Research on Development in Information
     Retrieval
@@ -2009,6 +2018,15 @@
     timezone: AoE
     date: October 17-22, 2022
     place: Atlanta, Georgia, USA
+  - year: 2023
+    id: cikm23
+    link: https://cikm2023.github.io/
+    timeline:
+    - abstract_deadline: '2023-05-26 23:59:59'
+      deadline: '2023-06-02 23:59:59'
+    timezone: AoE
+    date: October 21-25, 2023
+    place: Birmingham, UK
 - title: SIGIR Short Paper
   description: International Conference on Research on Development in Information
     Retrieval
