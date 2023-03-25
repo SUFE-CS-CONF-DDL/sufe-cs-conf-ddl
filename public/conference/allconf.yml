@@ -1839,8 +1839,8 @@
     id: iswc22
     link: https://iswc2022.semanticweb.org/
     timeline:
-    - abstract_deadline: '2023-04-28 23:59:59'
-      deadline: '2023-05-05 23:59:59'
+    - abstract_deadline: '2022-04-28 23:59:59'
+      deadline: '2022-05-05 23:59:59'
     timezone: AoE
     date: October 23-27, 2022
     place: Hangzhou, China
@@ -1848,8 +1848,8 @@
     id: iswc23
     link: https://iswc2023.semanticweb.org/
     timeline:
-    - abstract_deadline: '2022-05-02 23:59:59'
-      deadline: '2022-05-09 23:59:59'
+    - abstract_deadline: '2023-05-02 23:59:59'
+      deadline: '2023-05-09 23:59:59'
     timezone: AoE
     date: November 6-10, 2023
     place: Athens, Greece
