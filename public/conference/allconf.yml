@@ -844,6 +844,15 @@
     timezone: AoE
     date: December 7–11, 2022
     place: Abu Dhabi
+  - year: 2023
+    id: emnlp23
+    link: https://2023.emnlp.org
+    timeline:
+    - abstract_deadline: '2023-06-16 23:59:59'
+      deadline: '2023-06-23 23:59:59'
+    timezone: UTC-12
+    date: December 6 - 10, 2023
+    place: Singapore
 - title: ECAI
   description: European Conference on Artificial Intelligence
   sub: AI
@@ -1114,6 +1123,14 @@
     timezone: UTC-8
     date: July 2-5, 2022
     place: London, UK
+  - year: 2023
+    id: colt23
+    link: https://learningtheory.org/colt2023/index.html
+    timeline:
+    - deadline: '2023-02-10 15:59:59'
+    timezone: UTC-8
+    date: July 12-15, 2023
+    place: Bangalore, India
 - title: IJCNN
   description: International Joint Conference on Neural Networks
   sub: AI

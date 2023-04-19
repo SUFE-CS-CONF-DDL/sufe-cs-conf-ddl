@@ -13,3 +13,11 @@
       timezone: UTC-8
       date: July 2-5, 2022
       place: London, UK
+    - year: 2023
+      id: colt23
+      link: https://learningtheory.org/colt2023/index.html
+      timeline:
+        - deadline: '2023-02-10 15:59:59'
+      timezone: UTC-8
+      date: July 12-15, 2023
+      place: Bangalore, India
