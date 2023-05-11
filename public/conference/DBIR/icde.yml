@@ -36,4 +36,15 @@
           comment: 'third round'
       timezone: UTC-8
       date: April 3–7, 2023
-      place: Anaheim, California, USA 
+      place: Anaheim, California, USA
+    - year: 2024
+      id: icde24
+      link: https://icde2024.github.io/
+      timeline:
+        - deadline: '2023-07-28 23:59:59'
+          comment: 'first round'
+        - deadline: '2023-11-24 23:59:59'
+          comment: 'second round'
+      timezone: UTC-12
+      date: April 16–19, 2024
+      place: Utrecht, Netherlands

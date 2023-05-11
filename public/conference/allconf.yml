@@ -997,6 +997,15 @@
     timezone: UTC-12
     date: February 7-14, 2023
     place: Washington, DC, USA
+  - year: 2024
+    id: aaai24
+    link: https://aaai.org/aaai-conference/
+    timeline:
+    - abstract_deadline: '2023-08-08 23:59:00'
+      deadline: '2023-08-15 23:59:00'
+    timezone: UTC-12
+    date: February 20-27, 2024
+    place: Vancouver, Canada
 - title: NeurIPS
   description: Conference on Neural Information Processing Systems
   sub: AI
@@ -1835,6 +1844,17 @@
     timezone: UTC-8
     date: April 3–7, 2023
     place: Anaheim, California, USA
+  - year: 2024
+    id: icde24
+    link: https://icde2024.github.io/
+    timeline:
+    - deadline: '2023-07-28 23:59:59'
+      comment: first round
+    - deadline: '2023-11-24 23:59:59'
+      comment: second round
+    timezone: UTC-12
+    date: April 16–19, 2024
+    place: Utrecht, Netherlands
 - title: EDBT
   description: International Conference on Extending Database Technology
   sub: DBIR
@@ -2452,6 +2472,19 @@
     timezone: UTC-12
     date: May 23-26, 2023
     place: SAN FRANCISCO, U.S.
+  - year: 2024
+    id: sp24
+    link: https://www.ieee-security.org/TC/SP2024/
+    timeline:
+    - deadline: '2023-04-13 23:59:59'
+      comment: First Paper submission deadline
+    - deadline: '2023-08-03 23:59:59'
+      comment: Second Paper submission deadline
+    - deadline: '2023-12-06 23:59:59'
+      comment: Third Paper submission deadline
+    timezone: UTC-12
+    date: MAY 20-23, 2024
+    place: SAN FRANCISCO, CA
 - title: SECON
   description: IEEE International Conference on Sensing, Communication and Networking
   sub: NIS
