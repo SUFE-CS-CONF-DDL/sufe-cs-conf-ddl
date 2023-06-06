@@ -46,6 +46,14 @@
     timezone: AoE
     date: Feburary 12-16, 2022
     place: Seoul, S. Korea
+  - year: 2023
+    id: ppopp23
+    link: https://ppopp23.sigplan.org/
+    timeline:
+    - deadline: '2022-08-17 23:59:59'
+    timezone: AoE
+    date: Feburary 25- March 1, 2023
+    place: Montreal, Canada
 - title: ICA3PP
   description: International Conference on Algorithms and Architectures for Parallel
     Processing
@@ -1779,6 +1787,14 @@
     timezone: AoE
     date: February 27 - March 3, 2023
     place: Singapore
+  - year: 2024
+    id: wsdm24
+    link: https://www.wsdm-conference.org/2024/
+    timeline:
+    - deadline: '2023-08-10 23:59:59'
+    timezone: UTC-12
+    date: March 4 - March 8, 2024
+    place: Mexico
 - title: ECML-PKDD
   description: European Conference on Machine Learning and 25th Principles and Practice
     of Knowledge Discovery in Databases
@@ -2439,6 +2455,15 @@
     timezone: UTC-4
     date: May 17-20, 2022
     place: New York area, USA
+  - year: 2024
+    id: infocom24
+    link: https://infocom2024.ieee-infocom.org/
+    timeline:
+    - abstract_deadline: '2023-07-24 23:59:59'
+      deadline: '2022-07-31 23:59:59'
+    timezone: AoE
+    date: May 20-23, 2023
+    place: Vancouver, Canada
 - title: S&P
   description: IEEE Symposium on Security and Privacy
   sub: NIS
