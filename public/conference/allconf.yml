@@ -452,7 +452,7 @@
     link: https://ismar2022.org/
     timeline:
     - abstract_deadline: '2022-05-27 23:59:59'
-      deadline: '2021-06-03 23:59:59'
+      deadline: '2022-06-03 23:59:59'
     timezone: AoE
     date: October 17-21, 2022
     place: Singapore
@@ -460,7 +460,8 @@
     id: ismar2023
     link: https://ismar23.org/
     timeline:
-    - deadline: TBD
+    - abstract_deadline: '2023-06-05 23:59:59'
+      deadline: '2023-06-12 23:59:59'
     timezone: AoE
     date: Oct 16-20, 2023
     place: Sydney, Australia
@@ -940,6 +941,14 @@
     timezone: AoE
     date: October 31 - November 02, 2022
     place: Washington DC, USA
+  - year: 2023
+    id: ictai23
+    link: https://ictai.computer.org/2023/
+    timeline:
+    - deadline: '2023-06-25 23:59:59'
+    timezone: AoE
+    date: 6-8 November 2023
+    place: Atlanta, Georgia, USA
 - title: CoNLL
   description: Conference on Natural Language Learning
   sub: AI
@@ -1339,6 +1348,17 @@
     timezone: AoE
     date: November 11-17, 2023
     place: United States
+  - year: 2024
+    id: fse24
+    link: https://2024.esec-fse.org/
+    timeline:
+    - deadline: '2023-09-21 23:59:59'
+      comment: paper registration deadline
+    - deadline: '2023-09-28 23:59:59'
+      comment: full paper submission deadline
+    timezone: AoE
+    date: July 15-19, 2024
+    place: Porto de Galinas, Brazil
 - title: RE
   description: IEEE International Requirement Engineering Conference
   sub: SE
@@ -2165,6 +2185,15 @@
     timezone: AoE
     date: May 1-5, 2023
     place: Austin, TEXAS, USA
+  - year: 2024
+    id: www24
+    link: https://www2024.thewebconf.org/
+    timeline:
+    - abstract_deadline: '2023-10-05 23:59:59'
+      deadline: '2023-10-12 23:59:59'
+    timezone: AoE
+    date: May 13-17, 2024
+    place: Singapore
 - title: ICNP
   description: International Conference on Network Protocols
   sub: NIS

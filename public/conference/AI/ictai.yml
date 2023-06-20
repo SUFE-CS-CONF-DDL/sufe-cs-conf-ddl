@@ -21,3 +21,11 @@
       timezone: AoE
       date: October 31 - November 02, 2022
       place: Washington DC, USA
+    - year: 2023
+      id: ictai23
+      link: https://ictai.computer.org/2023/
+      timeline:
+        - deadline: '2023-06-25 23:59:59'
+      timezone: AoE
+      date: 6-8 November 2023
+      place: Atlanta, Georgia, USA

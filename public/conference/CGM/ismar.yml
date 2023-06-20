@@ -10,7 +10,7 @@
       link: https://ismar2022.org/
       timeline:
         - abstract_deadline: '2022-05-27 23:59:59'
-          deadline: '2021-06-03 23:59:59'
+          deadline: '2022-06-03 23:59:59'
       timezone: AoE
       date: October 17-21, 2022
       place: Singapore
@@ -18,7 +18,8 @@
       id: ismar2023
       link: https://ismar23.org/
       timeline:
-        - deadline: 'TBD'
+        - abstract_deadline: '2023-06-05 23:59:59'
+          deadline: '2023-06-12 23:59:59'
       timezone: AoE
       date: Oct 16-20, 2023
       place: Sydney, Australia
