@@ -965,6 +965,22 @@
     timezone: AoE
     date: November 10-11, 2021
     place: Virtual
+  - year: 2022
+    id: conll22
+    link: https://www.conll.org/2022
+    timeline:
+    - deadline: '2022-06-30 23:59:00'
+    timezone: AoE
+    date: December 7-8, 2022
+    place: Virtual
+  - year: 2023
+    id: conll23
+    link: https://www.conll.org/2023
+    timeline:
+    - deadline: '2023-06-30 23:59:00'
+    timezone: AoE
+    date: December 6-7, 2023
+    place: Virtual
 - title: IJCAI
   description: International Joint Conference on Artificial Intelligence
   sub: AI
