@@ -946,7 +946,7 @@
     link: https://ictai.computer.org/2023/
     timeline:
     - deadline: '2023-07-09 23:59:59'
-    timezone: AoE
+    timezone: UTC-8
     date: 6-8 November 2023
     place: Atlanta, Georgia, USA
 - title: CoNLL
