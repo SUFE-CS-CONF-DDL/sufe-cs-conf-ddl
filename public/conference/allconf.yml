@@ -21,6 +21,15 @@
     timezone: UTC+0
     date: July 11–13, 2022
     place: Omni La Costa Resort & Spa in Carlsbad, CA, USA
+  - year: 2024
+    id: atc2024
+    link: https://www.usenix.org/conference/atc24/
+    timeline:
+    - abstract_deadline: '2024-01-09 23:59:59'
+      deadline: '2024-01-16 23:59:59'
+    timezone: UTC+0
+    date: July 10-12, 2024
+    place: Santa Clara, CA, USA
 - title: PPoPP
   description: ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming
   sub: PDC
@@ -1013,6 +1022,31 @@
     timezone: UTC-12
     date: August 19-25, 2023
     place: Cape Town, South Africa.
+- title: COLING
+  description: INTERNATIONNAL CONFERENCE ON COMPUTATIONAL LINGUISTICS
+  sub: AI
+  rank: B
+  TierLevel: /
+  dblp: coling
+  confs:
+  - year: 2022
+    id: coling22
+    link: https://coling2022.org/
+    timeline:
+    - deadline: '2022-05-17 23:59:00'
+      comment: Papers Due
+    timezone: AoE
+    date: June 12-17, 2022
+    place: Gyeongju, Republic of Korea
+  - year: 2024
+    id: coling24
+    link: https://lrec-coling-2024.lrec-conf.org/
+    timeline:
+    - deadline: '2023-10-13 23:59:59'
+      comment: Long, short and position papers due
+    timezone: UTC-12
+    date: May 20 - May 25, 2024
+    place: Torino, Italy
 - title: AAAI
   description: AAAI Conference on Artificial Intelligence
   sub: AI
@@ -1252,6 +1286,43 @@
     timezone: UTC-12
     date: July 10-15, 2022
     place: Washington DC, USA
+- title: ICLR
+  description: International Conference on Learning Representations
+  sub: AI
+  rank: /
+  TierLevel: /
+  dblp: iclr
+  confs:
+  - year: 2022
+    id: iclr22
+    link: https://iclr.cc/Conferences/2022
+    timeline:
+    - abstract_deadline: '2021-09-29 12:00:00'
+      deadline: '2021-10-21 12:00:00'
+      comment: Mandatory abstract deadline on Sep 29, 2021.
+    timezone: UTC-12
+    date: April 25-29, 2022
+    place: Virtual conference
+  - year: 2023
+    id: iclr23
+    link: https://iclr.cc/Conferences/2023
+    timeline:
+    - abstract_deadline: '2022-09-21 23:59:59'
+      deadline: '2022-09-28 23:59:59'
+      comment: Mandatory abstract deadline on Sep. 11, 2022.
+    timezone: UTC-12
+    date: May 01-05, 2023
+    place: Kigali, Rwanda
+  - year: 2024
+    id: iclr24
+    link: https://iclr.cc/Conferences/2024
+    timeline:
+    - abstract_deadline: '2023-09-21 23:59:59'
+      deadline: '2023-09-28 23:59:59'
+      comment: Mandatory abstract deadline on Sep. 21, 2023.
+    timezone: UTC-12
+    date: May 07-11, 2024
+    place: Vienna, Austria
 - title: ASE
   description: International Conference on Automated Software Engineering
   sub: SE
@@ -2047,6 +2118,14 @@
     timezone: UTC-7
     date: April 27-29, 2023
     place: Minneapolis, Minnesota, U.S.
+  - year: 2024
+    id: sdm2024
+    link: https://www.siam.org/conferences/cm/conference/sdm24
+    timeline:
+    - deadline: '2023-09-16 15:00:00'
+    timezone: UTC-8
+    date: April 18-20, 2024
+    place: Houston, TX, USA
 - title: ICDM
   description: IEEE International Conference on Data Mining
   sub: DBIR
@@ -2574,6 +2653,19 @@
     timezone: UTC-12
     date: May 23-26, 2023
     place: SAN FRANCISCO, U.S.
+  - year: 2024
+    id: sp24
+    link: https://www.ieee-security.org/TC/SP2024/
+    timeline:
+    - deadline: '2023-04-13 23:59:59'
+      comment: First Paper submission deadline
+    - deadline: '2023-08-03 23:59:59'
+      comment: Second Paper submission deadline
+    - deadline: '2023-12-06 23:59:59'
+      comment: Third Paper submission deadline
+    timezone: UTC-12
+    date: MAY 20-23, 2024
+    place: SAN FRANCISCO, CA
   - year: 2024
     id: sp24
     link: https://www.ieee-security.org/TC/SP2024/
