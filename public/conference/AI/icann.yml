@@ -23,3 +23,12 @@
       timezone: UTC+0
       date: 26 – 29 September 2023
       place: Heraklion city, Crete, Greece
+    - year: 2024
+      id: icann24
+      link: https://e-nns.org/icann2024/
+      timeline:
+        - deadline: '2024-03-15 23:59:59'
+          comment: 'full paper submission'
+      timezone: UTC-12
+      date: Sep 17 – 19 2024
+      place: Switzerland

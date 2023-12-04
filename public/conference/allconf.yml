@@ -323,6 +323,15 @@
     timezone: UTC-12
     date: October 29-November 02, 2023
     place: Ottawa, Ontario, Canada
+  - year: 2024
+    id: mm24
+    link: https://2024.acmmm.org/
+    timeline:
+    - abstract_deadline: '2024-04-08 23:59:59'
+      deadline: '2024-04-12 23:59:59'
+    timezone: UTC-12
+    date: October 28-November 01, 2024
+    place: Melbourne, Australia
 - title: EG
   description: Eurographics
   sub: CGM
@@ -404,6 +413,15 @@
     timezone: UTC+0
     date: August 9-13, 2021
     place: Virtual
+  - year: 2024
+    id: siggraph24
+    link: https://s2024.siggraph.org/
+    timeline:
+    - abstract_deadline: '2024-01-23 22:00:00'
+      deadline: '2024-01-24 22:00:00'
+    timezone: UTC+0
+    date: July 28 - August 1, 2024
+    place: Denver
 - title: VRST
   description: ACM Symposium on Virtual Reality Software and Technology
   sub: CGM
@@ -842,6 +860,15 @@
     timezone: UTC-12
     date: July 23-29, 2023
     place: Hawaii Convention Center,Hawaii, USA
+  - year: 2024
+    id: icml24
+    link: https://icml.cc/Conferences/2024
+    timeline:
+    - deadline: '2024-02-01 23:59:59'
+      comment: Paper Submissions Open on OpenReview Jan 09 2024 02:00 PM UTC
+    timezone: UTC-12
+    date: July 21-27, 2024
+    place: Messe Wien Exhibition Congress Center, Vienna, Austria
 - title: EMNLP
   description: Conference on Empirical Methods in Natural Language Processing
   sub: AI
@@ -1167,6 +1194,15 @@
     timezone: UTC+0
     date: 26 – 29 September 2023
     place: Heraklion city, Crete, Greece
+  - year: 2024
+    id: icann24
+    link: https://e-nns.org/icann2024/
+    timeline:
+    - deadline: '2024-03-15 23:59:59'
+      comment: full paper submission
+    timezone: UTC-12
+    date: Sep 17 – 19 2024
+    place: Switzerland
 - title: NeurIPS Datasets and Benchmarks Track
   description: Conference on Neural Information Processing Systems
   sub: AI
@@ -1242,6 +1278,15 @@
     timezone: AoE
     date: July 18-23, 2023.
     place: Queensland, Australia
+  - year: 2024
+    id: ijcnn24
+    link: https://2024.ieeewcci.org
+    timeline:
+    - deadline: '2024-01-05 23:59:59'
+      comment: full paper
+    timezone: AoE
+    date: June 30 - July 5, 2024.
+    place: YOKOHAMA, JAPAN
 - title: KR
   description: International Conference on Principles of Knowledge Representation
     and Reasoning
@@ -1286,6 +1331,14 @@
     timezone: UTC-12
     date: July 10-15, 2022
     place: Washington DC, USA
+  - year: 2024
+    id: naacl24
+    link: https://2024.naacl.org/
+    timeline:
+    - deadline: '2023-12-15 23:59:59'
+    timezone: UTC-12
+    date: June 16-21, 2024
+    place: Mexico City, Mexico
 - title: ICLR
   description: International Conference on Learning Representations
   sub: AI
@@ -1352,6 +1405,15 @@
     timezone: AoE
     date: September 11-15, 2023
     place: Kirchberg, Luxembourg
+  - year: 2024
+    id: ase24
+    link: https://conf.researchr.org/home/ase-2024
+    timeline:
+    - abstract_deadline: '2024-05-31 23:59:59'
+      deadline: '2024-06-07 23:59:59'
+    timezone: AoE
+    date: October 27- November 01, 2024
+    place: Sacramento, California, United States
 - title: ICWS
   description: International Conference on Web Services （Research Track）
   sub: SE
@@ -1798,6 +1860,15 @@
     timezone: AoE
     date: July 23-27, 2023
     place: Taipei, Taiwan
+  - year: 2024
+    id: sigir24
+    link: https://sigir-2024.github.io/index.html
+    timeline:
+    - abstract_deadline: '2024-01-19 23:59:59'
+      deadline: '2024-01-25 23:59:59'
+    timezone: AoE
+    date: July 14-18, 2024
+    place: Washington D.C., USA
 - title: VLDB
   description: International Conference on Very Large Data Bases
   sub: DBIR
@@ -2010,6 +2081,17 @@
     timezone: UTC-12
     date: April 16–19, 2024
     place: Utrecht, Netherlands
+  - year: 2024
+    id: icde24
+    link: https://icde2024.github.io/
+    timeline:
+    - deadline: '2023-07-28 23:59:59'
+      comment: first round
+    - deadline: '2023-12-03 23:59:59'
+      comment: second round
+    timezone: AoE
+    date: April 16-19, 2024
+    place: Utrecht, Netherlands
 - title: EDBT
   description: International Conference on Extending Database Technology
   sub: DBIR
@@ -2094,6 +2176,19 @@
     timezone: AoE
     date: August 6-10, 2023
     place: Long Beach Convention & Entertainment Center, USA
+  - year: 2024
+    id: sigkdd24
+    link: https://kdd.org/kdd2024/
+    timeline:
+    - abstract_deadline: '2024-02-01 23:59:59'
+      deadline: '2024-02-08 23:59:59'
+      comment: 1st deadline
+    - abstract_deadline: '2024-07-25 23:59:59'
+      deadline: '2024-08-01 23:59:59'
+      comment: 1st deadline
+    timezone: AoE
+    date: August 18-22, 2023
+    place: Barcelona, Spain
 - title: SDM
   description: SIAM International Conference on Data Mining
   sub: DBIR
@@ -2744,6 +2839,17 @@
     timezone: UTC-12
     date: November 26-30, 2023
     place: Copenhagen, Denmark
+  - year: 2024
+    id: ccs24
+    link: https://www.sigsac.org/ccs/CCS2024/
+    timeline:
+    - deadline: '2024-01-28 23:59:59'
+      comment: First Round Submission
+    - deadline: '2024-04-14 23:59:59'
+      comment: Second Round Submission (tentative)
+    timezone: UTC-12
+    date: October 14-18, 2024
+    place: Salt Lake City, U.S.A
 - title: MASS
   description: IEEE International Conference on Mobile Ad-Hoc and Smart Systems
   sub: NIS

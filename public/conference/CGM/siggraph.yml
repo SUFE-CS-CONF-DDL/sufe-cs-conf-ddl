@@ -23,4 +23,12 @@
       timezone: UTC+0
       date: August 9-13, 2021
       place: Virtual
-
+    - year: 2024
+      id: siggraph24
+      link: https://s2024.siggraph.org/
+      timeline:
+        - abstract_deadline: '2024-01-23 22:00:00'
+          deadline: '2024-01-24 22:00:00'
+      timezone: UTC+0
+      date: July 28 - August 1, 2024
+      place: Denver

@@ -25,3 +25,12 @@
       timezone: AoE
       date: July 18-23, 2023.
       place: Queensland, Australia
+    - year: 2024
+      id: ijcnn24
+      link: https://2024.ieeewcci.org
+      timeline:
+        - deadline: '2024-01-05 23:59:59'
+          comment: 'full paper'
+      timezone: AoE
+      date: June 30 - July 5, 2024.
+      place: YOKOHAMA, JAPAN
