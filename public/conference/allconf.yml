@@ -1049,6 +1049,15 @@
     timezone: UTC-12
     date: August 19-25, 2023
     place: Cape Town, South Africa.
+  - year: 2024
+    id: ijcai24
+    link: https://ijcai24.org/
+    timeline:
+    - abstract_deadline: '2024-01-10 23:59:59'
+      deadline: '2024-01-17 23:59:59'
+    timezone: UTC-12
+    date: August 3-9, 2024
+    place: Jeju Island, South Korea.
 - title: COLING
   description: INTERNATIONNAL CONFERENCE ON COMPUTATIONAL LINGUISTICS
   sub: AI
@@ -1758,10 +1767,10 @@
     id: dasfaa24
     link: https://www.dasfaa2024.org/
     timeline:
-    - abstract_deadline: '2023-10-20 23:59:59'
-      deadline: '2023-10-27 23:59:59'
+    - abstract_deadline: '2023-12-15 23:59:59'
+      deadline: '2023-12-22 23:59:59'
     timezone: AoE
-    date: May 14-16, 2024
+    date: July 3-5, 2024
     place: Gifu, Japan
 - title: PODS
   description: ACM SIGMOD Conference on Principles of  DB Systems
@@ -1864,7 +1873,7 @@
     id: sigir24
     link: https://sigir-2024.github.io/index.html
     timeline:
-    - abstract_deadline: '2024-01-19 23:59:59'
+    - abstract_deadline: '2024-01-18 23:59:59'
       deadline: '2024-01-25 23:59:59'
     timezone: AoE
     date: July 14-18, 2024
@@ -2357,6 +2366,15 @@
     timezone: AoE
     date: July 23-27, 2023
     place: Taipei, Taiwan
+  - year: 2024
+    id: sigirshort24
+    link: https://sigir.org/sigir2024/submit/call-for-short-papers
+    timeline:
+    - abstract_deadline: '2023-02-1 23:59:59'
+      deadline: '2023-02-7 23:59:59'
+    timezone: AoE
+    date: July 23-27, 2023
+    place: Washington D.C., USA
 - title: ASIACRYPT
   description: International Conference on the Theory and Application of Cryptology
     and Information Security

@@ -14,3 +14,12 @@
       timezone: AoE
       date: July 23-27, 2023
       place: Taipei, Taiwan
+    - year: 2024
+      id: sigirshort24
+      link: https://sigir.org/sigir2024/submit/call-for-short-papers
+      timeline:
+        - abstract_deadline: '2023-02-1 23:59:59'
+          deadline: '2023-02-7 23:59:59'
+      timezone: AoE
+      date: July 23-27, 2023
+      place: Washington D.C., USA
