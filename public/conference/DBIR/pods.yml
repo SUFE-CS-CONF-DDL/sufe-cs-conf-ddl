@@ -35,3 +35,37 @@
       timezone: UTC-8
       date: June 18-23,2023
       place: Seattle,WA,USA
+    - year: 2024
+      id: sigmod24
+      link: http://2024.sigmod.org/
+      timeline:
+        - deadline: '2023-01-15 23:59:00'
+          comment: 'round 1'
+        - deadline: '2023-04-15 23:59:00'
+          comment: 'round 2'
+        - deadline: '2023-07-15 23:59:00'
+          comment: 'round 3'
+        - deadline: '2023-10-15 23:59:00'
+          comment: 'round 4'
+      timezone: UTC-7
+      date: June 11-16, 2024
+      place: Santiago, Chile
+    - year: 2025
+      id: sigmod25
+      link: https://2025.sigmod.org/
+      timeline:
+        - abstract_deadline: '2024-01-10 23:59:00'
+          deadline: '2024-01-17 23:59:00'
+          comment: 'round 1'
+        - abstract_deadline: '2024-04-10 23:59:00'
+          deadline: '2024-04-17 23:59:00'
+          comment: 'round 2'
+        - abstract_deadline: '2024-07-10 23:59:00'
+          deadline: '2024-07-17 23:59:00'
+          comment: 'round 3'
+        - abstract_deadline: '2024-10-10 23:59:00'
+          deadline: '2024-10-17 23:59:00'
+          comment: 'round 4'
+      timezone: AoE
+      date: unknown, 2025
+      place: Berlin, Germany

@@ -13,3 +13,11 @@
       timezone: UTC-5
       date: June 27-30, 2022
       place: Newark, NewJersy, USA
+    - year: 2024
+      id: icmr24
+      link: https://icmr2024.org/index.html
+      timeline:
+        - deadline: '2024-02-01 23:59:59'
+      timezone: UTC-12
+      date: June 11-13, 2024
+      place: Phuket, Thailand

@@ -159,6 +159,15 @@
     timezone: AoE
     date: June 27-30, 2022
     place: Virtually
+  - year: 2024
+    id: ics24
+    link: https://ics2024.github.io/
+    timeline:
+    - abstract_deadline: '2024-01-11 23:59:59'
+      deadline: '2024-01-18 23:59:59'
+    timezone: AoE
+    date: June 4-7, 2024
+    place: Kyoto University, Kyoto, Japan
 - title: SC
   description: International Conference for High Performance Computing, Networking,
     Storage, and Analysis
@@ -460,6 +469,14 @@
     timezone: UTC+0
     date: July 10-14, 2023
     place: Brisbane, Australia
+  - year: 2024
+    id: icme24
+    link: https://2024.ieeeicme.org/
+    timeline:
+    - deadline: '2023-12-30 23:59:59'
+    timezone: UTC+0
+    date: July 15-19, 2024
+    place: Niagra Falls, Canada
 - title: ICMR
   description: ACM SIGMM International Conference on Multimedia Retrieval
   sub: CGM
@@ -475,6 +492,14 @@
     timezone: UTC-5
     date: June 27-30, 2022
     place: Newark, NewJersy, USA
+  - year: 2024
+    id: icmr24
+    link: https://icmr2024.org/index.html
+    timeline:
+    - deadline: '2024-02-01 23:59:59'
+    timezone: UTC-12
+    date: June 11-13, 2024
+    place: Phuket, Thailand
 - title: ISMAR
   description: International Symposium on Mixed and Augmented Reality
   sub: CGM
@@ -931,6 +956,15 @@
     timezone: AoE
     date: 1-6 October, 2023
     place: Kraków, Poland
+  - year: 2024
+    id: ecai24
+    link: https://www.ecai2024.eu/
+    timeline:
+    - abstract_deadline: '2024-04-19 23:59:59'
+      deadline: '2024-04-25 23:59:59'
+    timezone: UTC-12
+    date: October 19-24, 2024
+    place: Santiago de Compostela
 - title: UAI
   description: Conference on Uncertainty in Artificial Intelligence
   sub: AI
@@ -1288,14 +1322,13 @@
     date: July 18-23, 2023.
     place: Queensland, Australia
   - year: 2024
-    id: ijcnn24
-    link: https://2024.ieeewcci.org
+    id: ijcnn2024
+    link: https://2024.ieeewcci.org/
     timeline:
-    - deadline: '2024-01-05 23:59:59'
-      comment: full paper
-    timezone: AoE
-    date: June 30 - July 5, 2024.
-    place: YOKOHAMA, JAPAN
+    - deadline: '2024-01-29 23:59:59'
+    timezone: UTC-12
+    date: June 30 - July 5, 2024
+    place: Yokohama, Japan
 - title: KR
   description: International Conference on Principles of Knowledge Representation
     and Reasoning
@@ -1632,6 +1665,19 @@
     timezone: AoE
     date: April 12-21, 2024
     place: Lisbon, Portugal
+  - year: 2025
+    id: icse25
+    link: https://conf.researchr.org/home/icse-2025
+    timeline:
+    - abstract_deadline: '2024-03-15 23:59:59'
+      deadline: '2024-03-22 23:59:59'
+      comment: 'First Cycle: Submission'
+    - abstract_deadline: '2024-07-26 23:59:59'
+      deadline: '2024-08-02 23:59:59'
+      comment: 'Second Cycle: Submission'
+    timezone: AoE
+    date: April 26- May 04, 2025
+    place: Ottawa, Ontario, Canada
 - title: QRS
   description: IEEE International Conference on Software Quality, Reliability and
     Security
@@ -1809,6 +1855,40 @@
     timezone: UTC-8
     date: June 18-23,2023
     place: Seattle,WA,USA
+  - year: 2024
+    id: sigmod24
+    link: http://2024.sigmod.org/
+    timeline:
+    - deadline: '2023-01-15 23:59:00'
+      comment: round 1
+    - deadline: '2023-04-15 23:59:00'
+      comment: round 2
+    - deadline: '2023-07-15 23:59:00'
+      comment: round 3
+    - deadline: '2023-10-15 23:59:00'
+      comment: round 4
+    timezone: UTC-7
+    date: June 11-16, 2024
+    place: Santiago, Chile
+  - year: 2025
+    id: sigmod25
+    link: https://2025.sigmod.org/
+    timeline:
+    - abstract_deadline: '2024-01-10 23:59:00'
+      deadline: '2024-01-17 23:59:00'
+      comment: round 1
+    - abstract_deadline: '2024-04-10 23:59:00'
+      deadline: '2024-04-17 23:59:00'
+      comment: round 2
+    - abstract_deadline: '2024-07-10 23:59:00'
+      deadline: '2024-07-17 23:59:00'
+      comment: round 3
+    - abstract_deadline: '2024-10-10 23:59:00'
+      deadline: '2024-10-17 23:59:00'
+      comment: round 4
+    timezone: AoE
+    date: unknown, 2025
+    place: Berlin, Germany
 - title: CIKM Short Papers
   description: ACM International Conference on Information and Knowledge Management
   sub: DBIR
@@ -2040,6 +2120,15 @@
     timezone: AoE
     date: September 18-22, 2023
     place: Turin, Italy
+  - year: 2024
+    id: ecmlpkdd2024
+    link: https://2024.ecmlpkdd.org/submissions/key-dates-and-deadlines/
+    timeline:
+    - abstract_deadline: '2024-03-15 23:59:59'
+      deadline: '2024-03-22 23:59:59'
+    timezone: AoE
+    date: September 9-13, 2024
+    place: Vilnius, Lithuania
 - title: ICDE
   description: IEEE International Conference on Data Engineering
   sub: DBIR
@@ -2253,6 +2342,14 @@
     timezone: UTC+8
     date: December 1-4, 2023
     place: Shanghai, China
+  - year: 2024
+    id: icdm2024
+    link: http://18.133.154.107/dates/
+    timeline:
+    - deadline: '2024-07-01 23:59:59'
+    timezone: AoE
+    date: December 9-12, 2024
+    place: Abu Dhabi,UAE
 - title: SIGMOD
   description: ACM Conference on Management of Data
   sub: DBIR
