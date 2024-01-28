@@ -1212,6 +1212,14 @@
     timezone: UTC-12
     date: July 9-14, 2023
     place: Toronto, Canada
+  - year: 2024
+    id: acl24
+    link: https://2024.aclweb.org/
+    timeline:
+    - deadline: '2024-02-15 23:59:59'
+    timezone: UTC-12
+    date: August 11-16, 2024
+    place: Bangkok, Thailand
 - title: ICANN
   description: International Conference on Artificial Neural Networks
   sub: AI
@@ -1294,6 +1302,14 @@
     timezone: UTC-8
     date: July 12-15, 2023
     place: Bangalore, India
+  - year: 2024
+    id: colt24
+    link: https://www.learningtheory.org/colt2024/
+    timeline:
+    - deadline: '2024-02-09 15:59:59'
+    timezone: UTC-5
+    date: June 30 - July 3, 2024
+    place: Edmonton, Canada
 - title: IJCNN
   description: International Joint Conference on Neural Networks
   sub: AI
@@ -2467,10 +2483,10 @@
     id: sigirshort24
     link: https://sigir.org/sigir2024/submit/call-for-short-papers
     timeline:
-    - abstract_deadline: '2023-02-1 23:59:59'
-      deadline: '2023-02-7 23:59:59'
+    - abstract_deadline: '2024-02-1 23:59:59'
+      deadline: '2024-02-7 23:59:59'
     timezone: AoE
-    date: July 23-27, 2023
+    date: July 23-27, 2024
     place: Washington D.C., USA
 - title: ASIACRYPT
   description: International Conference on the Theory and Application of Cryptology
@@ -2547,6 +2563,15 @@
     timezone: UTC-4
     date: October 30-November 2, 2022
     place: Lexington, Kentucky, USA
+  - year: 2024
+    id: icnp24
+    link: https://icnp24.cs.ucr.edu/index.html
+    timeline:
+    - abstract_deadline: '2024-05-17 23:59:59'
+      deadline: '2024-05-24 23:59:59'
+    timezone: AoE
+    date: October 28-31, 2024
+    place: Charleroi, Belgium
 - title: EUROCRYPT
   description: European Cryptology Conference
   sub: NIS
@@ -2612,6 +2637,14 @@
     timezone: AoE
     date: November 18-20, 2023
     place: Nankai University, Tianjin, China
+  - year: 2024
+    id: icics24
+    link: http://icics2024.aegean.gr/
+    timeline:
+    - deadline: '2024-02-02 23:59:59'
+    timezone: AoE
+    date: August 26-28, 2024
+    place: Mytilene, Greece
 - title: ICCCN
   description: IEEE International Conference on Computer Communications and Networks
   sub: NIS

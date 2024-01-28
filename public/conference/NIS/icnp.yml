@@ -14,3 +14,12 @@
       timezone: UTC-4
       date: October 30-November 2, 2022
       place: Lexington, Kentucky, USA
+    - year: 2024
+      id: icnp24
+      link: https://icnp24.cs.ucr.edu/index.html
+      timeline:
+        - abstract_deadline: '2024-05-17 23:59:59'
+          deadline: '2024-05-24 23:59:59'
+      timezone: AoE
+      date: October 28-31, 2024
+      place: Charleroi, Belgium
