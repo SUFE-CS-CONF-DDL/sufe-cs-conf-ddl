@@ -35,3 +35,11 @@
       timezone: UTC-12
       date: December 6 - 10, 2023
       place: Singapore
+    - year: 2025
+      id: emnlp25
+      link: https://2025.emnlp.org
+      timeline:
+        - deadline: '2025-05-19 23:59:59'
+      timezone: UTC-12
+      date: November 5 - 9, 2025
+      place: Suzhou, China

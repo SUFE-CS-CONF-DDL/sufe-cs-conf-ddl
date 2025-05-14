@@ -34,3 +34,12 @@
       timezone: UTC-12
       date: July 21-27, 2024
       place: Messe Wien Exhibition Congress Center, Vienna, Austria
+    - year: 2025
+      id: icml25
+      link: https://icml.cc/Conferences/2025/CallForPapers
+      timeline:
+        - abstract_deadline: '2025-01-23 23:59:59.'
+            deadline: '2025-01-30 23:59:59.'
+      timezone: AoE
+      date: July 13-19, 2025
+      place: Vancouver Convention Center

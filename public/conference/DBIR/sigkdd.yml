@@ -42,3 +42,16 @@
       timezone: AoE
       date: August 18-22, 2023
       place: Barcelona, Spain
+    - year: 2025
+      id: sigkdd25
+      link: https://kdd2025.kdd.org/
+      timeline:
+        - abstract_deadline: '2024-08-01 23:59:59'
+          deadline: '2024-08-08 23:59:59'
+          comment: 'Cycle 1 deadline'
+        - abstract_deadline: '2025-02-03 23:59:59'
+          deadline: '2025-02-10 23:59:59'
+          comment: 'Cycle 2 deadline'
+      timezone: AoE
+      date: August 3-7, 2025
+      place: Toronto, ON, Canada

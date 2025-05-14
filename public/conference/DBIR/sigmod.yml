@@ -53,3 +53,18 @@
       timezone: UTC-7
       date: June 11-16, 2024
       place: Santiago, Chile
+    - year: 2026
+      id: sigmod26
+      link: https://2026.sigmod.org/
+      timeline:
+        - deadline: '2025-01-17 23:59:00'
+          comment: 'round 1, abstract ddl is 2025-xx-10, same below'
+        - deadline: '2024-04-17 23:59:00'
+          comment: 'round 2'
+        - deadline: '2024-07-17 23:59:00'
+          comment: 'round 3'
+        - deadline: '2024-10-17 23:59:00'
+          comment: 'round 4'
+      timezone: AoE
+      date: May 31 - June 5, 2026
+      place: Bengaluru, India
