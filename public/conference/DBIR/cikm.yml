@@ -39,3 +39,12 @@
       timezone: AoE
       date: October 21-25, 2023
       place: Birmingham, UK
+    - year: 2025
+      id: cikm25
+      link: https://cikm2025.org/
+      timeline:
+        - abstract_deadline: '2025-05-16 23:59:59'
+          deadline: '2023-05-23 23:59:59'
+      timezone: AoE
+      date: October 10-14, 2025
+      place: Coex, Seoul, Korea
