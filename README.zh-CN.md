@@ -13,6 +13,7 @@
 
 ## 会议格式文件
 会议的yaml示例文件格式：
+
 ```yaml
 - title: SIGIR
   description: International Conference on Research on Development in Information Retrieval
@@ -40,6 +41,8 @@
       date: July 11-15, 2022
       place: Madrid
 ```
+注意：YAML文件应当严格按照格式缩进要求，推荐用Sublime/Pycharm等进行文本编辑，会进行报错。
+
 以上脚本项目的描述：
 
 > **yaml项目的描述**
@@ -90,6 +93,12 @@
 
 👨‍🏫 如果您对P&R操作不熟悉的话可以参考[本网址](https://chinese.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/) 。
 
+
+P&R后步骤：
+1. 在本local工程项目下面git pull
+2. Run `python merge_all.py`
+3. Run `npm run build`
+4. dist文件夹中的内容拖到`sufe-cs-conf-ddl.github.io`下面，push上去。
 
 
 ## 贡献

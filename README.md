@@ -98,6 +98,13 @@ Steps to add new conference tracks and update ddl:
 👨‍🏫 Refer to [this page](https://chinese.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/) 
  you're not familiar with commit pull&request. 
 
+Steps after P&R：
+1. In local projects Run `git pull`
+2. Run `python merge_all.py`
+3. Run `npm run build`
+4. Drag things under dist dir into `sufe-cs-conf-ddl.github.io`，then git push。
+
+
 ## Contribution
 Created by  [@SUFEHeisenberg](https://github.com/SUFEHeisenberg) with the help of [@HuipingXie](https://github.com/HuipingXie) by now👨🏻‍💻.
 
